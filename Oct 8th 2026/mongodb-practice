@@ -1,0 +1,2384 @@
+db.products.insertMany([
+  {
+    product_id: 101,
+    product_name: "Laptop",
+    price: 65000,
+    stock: 15,
+    available: true,
+    category: "Electronics",
+    colors: ["Black", "Silver"],
+    brand: "Dell",
+    warranty_years: 2,
+    launch_date: ISODate("2026-01-15")
+  },
+  {
+    product_id: 102,
+    product_name: "Smartphone",
+    price: 28000,
+    stock: 25,
+    available: true,
+    category: "Electronics",
+    colors: ["Black", "Blue", "Red"],
+    brand: "Samsung",
+    warranty_years: 1,
+    launch_date: ISODate("2026-02-20")
+  },
+  {
+    product_id: 103,
+    product_name: "Office Chair",
+    price: 8500,
+    stock: 0,
+    available: false,
+    category: "Furniture",
+    colors: ["Black", "Grey"],
+    brand: "GreenSoul",
+    warranty_years: 3,
+    launch_date: ISODate("2025-11-10")
+  },
+  {
+    product_id: 104,
+    product_name: "Smart Watch",
+    price: 12000,
+    stock: 8,
+    available: true,
+    category: "Wearable",
+    colors: ["Black", "Red"],
+    brand: "Noise",
+    warranty_years: 2,
+    launch_date: ISODate("2026-04-05")
+  },
+  {
+    product_id: 105,
+    product_name: "Headphones",
+    price: 4500,
+    stock: 30,
+    available: true,
+    category: "Electronics",
+    colors: ["Blue", "White"],
+    brand: "Sony",
+    warranty_years: 1,
+    launch_date: ISODate("2026-05-12")
+  },
+  {
+    product_id: 106,
+    product_name: "Tablet",
+    price: 22000,
+    stock: 12,
+    available: false,
+    category: "Electronics",
+    colors: ["Silver", "Grey"],
+    brand: "Lenovo",
+    warranty_years: 2,
+    launch_date: ISODate("2025-12-25")
+  }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6ac72b2d102fce798171f94f'),
+    '1': ObjectId('6ac72b2d102fce798171f950'),
+    '2': ObjectId('6ac72b2d102fce798171f951'),
+    '3': ObjectId('6ac72b2d102fce798171f952'),
+    '4': ObjectId('6ac72b2d102fce798171f953'),
+    '5': ObjectId('6ac72b2d102fce798171f954')
+  }
+}
+db.products.find()
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f953'),
+  product_id: 105,
+  product_name: 'Headphones',
+  price: 4500,
+  stock: 30,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Blue',
+    'White'
+  ],
+  brand: 'Sony',
+  warranty_years: 1,
+  launch_date: ISODate('2026-05-12T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {product_id:104}
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {
+    price: {$gt:20000}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {
+    stock:{$lt:10}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {available:true}
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f953'),
+  product_id: 105,
+  product_name: 'Headphones',
+  price: 4500,
+  stock: 30,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Blue',
+    'White'
+  ],
+  brand: 'Sony',
+  warranty_years: 1,
+  launch_date: ISODate('2026-05-12T00:00:00.000Z')
+}
+db.products.find(
+  {category:"Electronics"}
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f953'),
+  product_id: 105,
+  product_name: 'Headphones',
+  price: 4500,
+  stock: 30,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Blue',
+    'White'
+  ],
+  brand: 'Sony',
+  warranty_years: 1,
+  launch_date: ISODate('2026-05-12T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {
+    color:"Black"
+  }
+)
+db.products.find(
+  {
+    colors:"Black"
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {
+    colors: $all:["Black","Red"]
+  }
+)
+SyntaxError: Unexpected token, expected "," (3:16)
+
+  1 | db.products.find(
+  2 |   {
+> 3 |     colors: $all:["Black","Red"]
+    |                 ^
+  4 |   }
+  5 | )
+db.products.find(
+  {
+    colors: {$all:["Black","Red"]}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {
+    colors: {$all:["Silver","grey"]}
+  }
+)
+db.products.find(
+  {
+    colors: {$all:["Silver","Grey"]}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {brands:"Samsung"}
+)
+db.products.find(
+  {brand:"Samsung"}
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+db.products.find(
+  {warranty_years:{$gt:1}}
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {launch_date:{$gt:ISODate("2025-01-01T00:00:00Z")}}
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f953'),
+  product_id: 105,
+  product_name: 'Headphones',
+  price: 4500,
+  stock: 30,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Blue',
+    'White'
+  ],
+  brand: 'Sony',
+  warranty_years: 1,
+  launch_date: ISODate('2026-05-12T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {launch_date:{$gt:ISODate("2026-01-01T00:00:00Z")}}
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f953'),
+  product_id: 105,
+  product_name: 'Headphones',
+  price: 4500,
+  stock: 30,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Blue',
+    'White'
+  ],
+  brand: 'Sony',
+  warranty_years: 1,
+  launch_date: ISODate('2026-05-12T00:00:00.000Z')
+}
+db.products.find(
+  {available:true},
+  {stock:{$gt:10}}
+)
+MongoServerError[Location16020]: Expression $gt takes exactly 2 arguments. 1 were passed in.
+db.products.find({
+  {available:true},
+  {stock:{$gt:10}}
+)
+SyntaxError: Unexpected token (2:2)
+
+  1 | db.products.find({
+> 2 |   {available:true},
+    |   ^
+  3 |   {stock:{$gt:10}}
+  4 | )
+db.products.find(
+  {
+  {available:true},
+  {stock:{$gt:10}}
+  }
+)
+SyntaxError: Unexpected token (3:2)
+
+  1 | db.products.find(
+  2 |   {
+> 3 |   {available:true},
+    |   ^
+  4 |   {stock:{$gt:10}}
+  5 |   }
+  6 | )
+db.products.find(
+  {
+  {available:true},
+  {stock:{$gt:10}}
+  }
+)
+SyntaxError: Unexpected token (3:2)
+
+  1 | db.products.find(
+  2 |   {
+> 3 |   {available:true},
+    |   ^
+  4 |   {stock:{$gt:10}}
+  5 |   }
+  6 | )
+db.products.find(
+  {available:true,
+  stock:{$gt:10}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f953'),
+  product_id: 105,
+  product_name: 'Headphones',
+  price: 4500,
+  stock: 30,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Blue',
+    'White'
+  ],
+  brand: 'Sony',
+  warranty_years: 1,
+  launch_date: ISODate('2026-05-12T00:00:00.000Z')
+}
+db.products.find(
+  {$or:
+  {available:false},
+   {stock:{$eq:1}}
+  }
+)
+SyntaxError: Unexpected token (4:3)
+
+  2 |   {$or:
+  3 |   {available:false},
+> 4 |    {stock:{$eq:1}}
+    |    ^
+  5 |   }
+  6 | )
+db.products.find(
+  {$or:[
+  {available:false},
+   {stock:{$eq:1}}]
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {
+    price:{$gt:10000, $lt:30000}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {
+    brand: {$or:["Samsung","Sony"]}
+  }
+)
+MongoServerError[BadValue]: unknown operator: $or
+db.products.find(
+  {
+    brand: {{$or:["Samsung","Sony"]}
+  }
+)
+SyntaxError: Unexpected token (3:12)
+
+  1 | db.products.find(
+  2 |   {
+> 3 |     brand: {{$or:["Samsung","Sony"]}
+    |             ^
+  4 |   }
+  5 | )
+db.products.find(
+  {
+    brand: {$in:["Samsung","Sony"]}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f953'),
+  product_id: 105,
+  product_name: 'Headphones',
+  price: 4500,
+  stock: 30,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Blue',
+    'White'
+  ],
+  brand: 'Sony',
+  warranty_years: 1,
+  launch_date: ISODate('2026-05-12T00:00:00.000Z')
+}
+db.products.find(
+  {
+    colors:"Black",
+    price:{$gt:10000}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {
+    colors:"Black",
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {
+    colors:"Black",
+    colors:"Red"
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {
+    available:true,
+    warranty_years:{$gt:1}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {
+   $or:[
+     price:{$gt:20000},
+     stock:0
+   ] 
+  }
+)
+SyntaxError: Unexpected token, expected "," (4:10)
+
+  2 |   {
+  3 |    $or:[
+> 4 |      price:{$gt:20000},
+    |           ^
+  5 |      stock:0
+  6 |    ] 
+  7 |   }
+db.products.find(
+  {
+   $or:[
+     {price:{$gt:20000}},
+      {stock:0}
+   ] 
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {
+    launch_date:{$gt:ISODate("2026-01-01T00:00:00Z")},
+    warranty_years:{$gt:1}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {
+    colors:{$in:["Black","Red"]}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {},
+  {product_name:1,price:1,brand:1,_id:0}
+)
+{
+  product_name: 'Laptop',
+  price: 65000,
+  brand: 'Dell'
+}
+{
+  product_name: 'Smartphone',
+  price: 28000,
+  brand: 'Samsung'
+}
+{
+  product_name: 'Office Chair',
+  price: 8500,
+  brand: 'GreenSoul'
+}
+{
+  product_name: 'Smart Watch',
+  price: 12000,
+  brand: 'Noise'
+}
+{
+  product_name: 'Headphones',
+  price: 4500,
+  brand: 'Sony'
+}
+{
+  product_name: 'Tablet',
+  price: 22000,
+  brand: 'Lenovo'
+}
+db.products.find(
+  {
+    colors:{$all:["Silver","Grey"]}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {
+    stock:{$gt:10},
+    available:false
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {brand:{$ne:"Samsung"}}
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f953'),
+  product_id: 105,
+  product_name: 'Headphones',
+  price: 4500,
+  stock: 30,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Blue',
+    'White'
+  ],
+  brand: 'Sony',
+  warranty_years: 1,
+  launch_date: ISODate('2026-05-12T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {
+    price:{$gt:5000,$lt:20,000}
+  }
+)
+SyntaxError: Unexpected token (3:30)
+
+  1 | db.products.find(
+  2 |   {
+> 3 |     price:{$gt:5000,$lt:20,000}
+    |                               ^
+  4 |   }
+  5 | )
+db.products.find(
+  {
+    price:{$gt:5000,$lt:20000}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {
+    brand:{$in:["Dell","Samsung","Lenovo"]}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {
+    $or:[
+      {available:true},
+      {price:{$lt:10000}}
+    ]
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f953'),
+  product_id: 105,
+  product_name: 'Headphones',
+  price: 4500,
+  stock: 30,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Blue',
+    'White'
+  ],
+  brand: 'Sony',
+  warranty_years: 1,
+  launch_date: ISODate('2026-05-12T00:00:00.000Z')
+}
+db.products.find(
+  {
+    colors:"Black",
+    warranty_years:{$gt:1}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 15,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  product_id: 103,
+  product_name: 'Office Chair',
+  price: 8500,
+  stock: 0,
+  available: false,
+  category: 'Furniture',
+  colors: [
+    'Black',
+    'Grey'
+  ],
+  brand: 'GreenSoul',
+  warranty_years: 3,
+  launch_date: ISODate('2025-11-10T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 12000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black',
+    'Red'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.updateOne(
+  {
+    {product_id:101},
+    {$inc:{stock:5}}
+  }
+)
+SyntaxError: Unexpected token (3:4)
+
+  1 | db.products.updateOne(
+  2 |   {
+> 3 |     {product_id:101},
+    |     ^
+  4 |     {$inc:{stock:5}}
+  5 |   }
+  6 | )
+db.products.updateOne(
+  
+    {product_id:101},
+    {$inc:{stock:5}}
+  
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.products.updateOne(
+  {product_id:103},
+)
+MongoInvalidArgumentError: Update document requires atomic operators
+db.products.updateOne(
+  {product_id:103},
+  {$set:{available:true}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.products.updateOne(
+  {product_id:101},
+  {$push:{colors:"Gold"}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.products.find(
+  {product_id:101}
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 20,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver',
+    'Gold'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+db.products.updateOne(
+  {product_id:104},
+  {$pop:{colors:"Red"}}
+)
+MongoServerError: Expected a number in: colors: "Red"
+db.products.updateOne(
+  {product_id:104},
+  {$remove:{colors:"Red"}}
+)
+MongoServerError: Unknown modifier: $remove. Expected a valid update modifier or pipeline-style update specified as an array
+db.products.updateOne(
+  {product_id:104},
+  {$pull:{colors:"Red"}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.products.updateOne(
+  {product_id:101},
+  {$addToSet:{colors:"Black"}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.products.find({product_id:101})
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 20,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver',
+    'Gold'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+db.products.updateOne(
+  {product_id:104},
+  {$pull:{colors:"Red"}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.products.updateOne(
+  {product_id:104},
+  {$set:{price:15000}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.products.find(
+  {},
+  {price:1},
+  {price_datatype:{$type:"$price"}}
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  price: 65000
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  price: 28000
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f951'),
+  price: 8500
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  price: 15000
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f953'),
+  price: 4500
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  price: 22000
+}
+db.products.find(
+  {},
+  {price:1,price_datatype:{$type:"$price"},_id:0}
+)
+{
+  price: 65000,
+  price_datatype: 'int'
+}
+{
+  price: 28000,
+  price_datatype: 'int'
+}
+{
+  price: 8500,
+  price_datatype: 'int'
+}
+{
+  price: 15000,
+  price_datatype: 'int'
+}
+{
+  price: 4500,
+  price_datatype: 'int'
+}
+{
+  price: 22000,
+  price_datatype: 'int'
+}
+db.products.find(
+  {
+    price:{$gt:10000},
+    available:true,
+    stock:{$gt:5}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 20,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver',
+    'Gold'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 15000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+db.products.find(
+  {
+    price:{$gt:10000},
+    $in:{category:["Electronics","Wearable"]}
+  }
+)
+MongoServerError[BadValue]: unknown top level operator: $in. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+db.products.find(
+  {
+    price:{$gt:10000},
+    {$in:{category:["Electronics","Wearable"]}}
+  }
+)
+SyntaxError: Unexpected token (4:4)
+
+  2 |   {
+  3 |     price:{$gt:10000},
+> 4 |     {$in:{category:["Electronics","Wearable"]}}
+    |     ^
+  5 |   }
+  6 | )
+db.products.find(
+  {
+    price:{$gt:10000},
+    category:{$in:["Electronics","Wearable"]}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 20,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver',
+    'Gold'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f950'),
+  product_id: 102,
+  product_name: 'Smartphone',
+  price: 28000,
+  stock: 25,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Blue',
+    'Red'
+  ],
+  brand: 'Samsung',
+  warranty_years: 1,
+  launch_date: ISODate('2026-02-20T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 15000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {
+    available:false,
+    $or:[{price:{$gt:20000}},{stock:{$e:0}}]
+  }
+)
+MongoServerError[BadValue]: unknown operator: $e
+db.products.find(
+  {
+    available:false,
+    $or:[{price:{$gt:20000}},{stock:{$eq:0}}]
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+db.products.find(
+  {
+    warranty_years:{$gt:2},
+    $or:[
+      {category:{$in:["Electronics","Wearable"]}
+    ]
+)
+SyntaxError: Unexpected token, expected "," (6:4)
+
+  4 |     $or:[
+  5 |       {category:{$in:["Electronics","Wearable"]}
+> 6 |     ]
+    |     ^
+  7 | )
+db.products.find(
+  {
+    warranty_years:{$gt:2},
+    $or:[
+      {category:{$in:["Electronics","Wearable"]}
+    ]
+  }
+)
+SyntaxError: Unexpected token, expected "," (6:4)
+
+  4 |     $or:[
+  5 |       {category:{$in:["Electronics","Wearable"]}
+> 6 |     ]
+    |     ^
+  7 |   }
+  8 | )
+ 
+db.products.find(
+  {
+    warranty_years:{$gt:2},
+    category:{$in:["Electronics","Wearable"]}
+  }
+)
+db.products.find(
+  {
+    warranty_years:{$gte:2},
+    category:{$in:["Electronics","Wearable"]}
+  }
+)
+{
+  _id: ObjectId('6ac72b2d102fce798171f94f'),
+  product_id: 101,
+  product_name: 'Laptop',
+  price: 65000,
+  stock: 20,
+  available: true,
+  category: 'Electronics',
+  colors: [
+    'Black',
+    'Silver',
+    'Gold'
+  ],
+  brand: 'Dell',
+  warranty_years: 2,
+  launch_date: ISODate('2026-01-15T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f952'),
+  product_id: 104,
+  product_name: 'Smart Watch',
+  price: 15000,
+  stock: 8,
+  available: true,
+  category: 'Wearable',
+  colors: [
+    'Black'
+  ],
+  brand: 'Noise',
+  warranty_years: 2,
+  launch_date: ISODate('2026-04-05T00:00:00.000Z')
+}
+{
+  _id: ObjectId('6ac72b2d102fce798171f954'),
+  product_id: 106,
+  product_name: 'Tablet',
+  price: 22000,
+  stock: 12,
+  available: false,
+  category: 'Electronics',
+  colors: [
+    'Silver',
+    'Grey'
+  ],
+  brand: 'Lenovo',
+  warranty_years: 2,
+  launch_date: ISODate('2025-12-25T00:00:00.000Z')
+}
+mongo_practice
+Selection deleted
+
+
