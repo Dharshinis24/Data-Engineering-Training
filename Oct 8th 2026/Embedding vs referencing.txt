@@ -1,0 +1,86 @@
+Embedding: 
+	1.Store related data inside same document
+	2.Use:when the data belongs to one entity
+
+1.Student and their marks 
+{
+student_id:18,
+student_name:"Dharshini S",
+marks:{
+    maths:87,
+    science:90,
+    social_science:93
+      }
+}
+
+2.Student and their contact details
+{
+student_id:18,
+student_name:"Dharshini S",
+contact:{
+    phone_number:1234567891,
+    email_id:"dharshinis@gmail.com",
+        }
+}
+
+
+Referencing:
+	1.Store related data in separate collections and refer to it using an id
+	2.use:when data is shared among multiple entities or needs to be managed separately
+
+1.Students and departments
+
+Department
+{
+dept_id:101,
+dept_name:"Information Technology",
+hod:"Amirthaa"
+}
+
+Students
+
+{
+student_id:1,
+student_name:"Abinaya P",
+dept_id:101
+},
+{
+student_id:2,
+student_name:"Anu S",
+dept_id:101
+},
+{
+student_id:3,
+student_name:"Arun B",
+dept_id:101
+}
+
+2.curstomer and orders
+
+customer
+{
+customer_id:1,
+customer_name:"Dharshini S",
+customer_phoneno:1234567891,
+customer_email:"dharshinis369@gmail.com"
+}
+
+orders
+{
+  order_id: 5001,
+  customer_id: 1,
+  product_id:101,
+  amount: 25000
+},
+{
+  order_id: 5002,
+  customer_id: 1,
+  product_id:107, 
+ amount: 120
+},
+{
+  order_id: 5003,
+  customer_id: 1,
+  product_id:169,
+ amount: 999
+}
