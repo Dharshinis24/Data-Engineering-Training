@@ -1,4 +1,4 @@
-sales = [
+sales =  [
 ("North", 12000),
 ("South", 18000),
 ("West", 9500),
