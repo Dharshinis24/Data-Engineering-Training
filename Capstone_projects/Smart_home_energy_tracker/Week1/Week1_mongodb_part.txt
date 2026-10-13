@@ -1,0 +1,89 @@
+use("capstone_project")
+switched to db capstone_project
+db.sensor_logs.insertMany([
+  { device_id: 1,  timestamp: new Date("2026-10-11T08:00:00Z"), energy_kwh: 0.0750, voltage: 230.1, current: 0.33, power_watts: 75.0,   sensor_status: "ok" },
+  { device_id: 1,  timestamp: new Date("2026-10-11T20:00:00Z"), energy_kwh: 0.0750, voltage: 230.0, current: 0.33, power_watts: 75.0,   sensor_status: "ok" },
+  { device_id: 2,  timestamp: new Date("2026-10-11T19:00:00Z"), energy_kwh: 0.1200, voltage: 229.8, current: 0.52, power_watts: 120.0,  sensor_status: "ok" },
+  { device_id: 5,  timestamp: new Date("2026-10-11T06:00:00Z"), energy_kwh: 0.1500, voltage: 231.0, current: 0.65, power_watts: 150.0,  sensor_status: "ok" },
+  { device_id: 5,  timestamp: new Date("2026-10-11T18:00:00Z"), energy_kwh: 0.1450, voltage: 230.4, current: 0.63, power_watts: 145.0,  sensor_status: "ok" },
+  { device_id: 9,  timestamp: new Date("2026-10-11T22:00:00Z"), energy_kwh: 1.2000, voltage: 228.7, current: 6.52, power_watts: 1490.0, sensor_status: "ok" },
+  { device_id: 13, timestamp: new Date("2026-10-11T10:00:00Z"), energy_kwh: 0.2500, voltage: 230.2, current: 1.09, power_watts: 250.0,  sensor_status: "ok" },
+  { device_id: 13, timestamp: new Date("2026-10-11T15:00:00Z"), energy_kwh: 0.2300, voltage: 230.1, current: 1.00, power_watts: 230.0,  sensor_status: "ok" },
+  { device_id: 17, timestamp: new Date("2026-10-11T06:00:00Z"), energy_kwh: 1.0000, voltage: 229.5, current: 8.70, power_watts: 1995.0, sensor_status: "ok" },
+  { device_id: 1,  timestamp: new Date("2026-10-12T09:00:00Z"), energy_kwh: 0.0600, voltage: 230.0, current: 0.26, power_watts: 60.0,   sensor_status: "ok" },
+  { device_id: 2,  timestamp: new Date("2026-10-12T19:00:00Z"), energy_kwh: 0.2400, voltage: 229.9, current: 0.52, power_watts: 120.0,  sensor_status: "ok" },
+  { device_id: 5,  timestamp: new Date("2026-10-12T06:00:00Z"), energy_kwh: 0.1500, voltage: 230.8, current: 0.65, power_watts: 150.0,  sensor_status: "ok" },
+  { device_id: 5,  timestamp: new Date("2026-10-12T18:00:00Z"), energy_kwh: 0.1480, voltage: 230.5, current: 0.64, power_watts: 148.0,  sensor_status: "ok" },
+  { device_id: 9,  timestamp: new Date("2026-10-12T22:00:00Z"), energy_kwh: 1.4500, voltage: 228.9, current: 6.55, power_watts: 1500.0, sensor_status: "ok" },
+  { device_id: 9,  timestamp: new Date("2026-10-12T23:00:00Z"), energy_kwh: 0.9000, voltage: 229.1, current: 6.50, power_watts: 1489.0, sensor_status: "ok" },
+  { device_id: 13, timestamp: new Date("2026-10-12T10:00:00Z"), energy_kwh: 0.2500, voltage: 230.3, current: 1.09, power_watts: 250.0,  sensor_status: "ok" },
+  { device_id: 17, timestamp: new Date("2026-10-12T06:00:00Z"), energy_kwh: 0.0000, voltage: 230.0, current: 0.00, power_watts: 0.0,    sensor_status: "ok" },
+  { device_id: 1,  timestamp: new Date("2026-10-13T08:00:00Z"), energy_kwh: 0.0750, voltage: 230.2, current: 0.33, power_watts: 75.0,   sensor_status: "ok" },
+  { device_id: 2,  timestamp: new Date("2026-10-13T19:00:00Z"), energy_kwh: 0.1200, voltage: 229.7, current: 0.52, power_watts: 120.0,  sensor_status: "ok" },
+  { device_id: 5,  timestamp: new Date("2026-10-13T06:00:00Z"), energy_kwh: 0.1520, voltage: 230.9, current: 0.66, power_watts: 152.0,  sensor_status: "ok" },
+  { device_id: 9,  timestamp: new Date("2026-10-13T22:00:00Z"), energy_kwh: 1.1000, voltage: 229.0, current: 6.45, power_watts: 1480.0, sensor_status: "ok" },
+  { device_id: 13, timestamp: new Date("2026-10-13T10:00:00Z"), energy_kwh: 0.2500, voltage: 230.4, current: 1.09, power_watts: 250.0,  sensor_status: "ok" },
+  { device_id: 17, timestamp: new Date("2026-10-13T06:00:00Z"), energy_kwh: 0.8000, voltage: 229.6, current: 8.67, power_watts: 1990.0, sensor_status: "ok" }
+]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6acdd3cb61f890e54daac889'),
+    '1': ObjectId('6acdd3cb61f890e54daac88a'),
+    '2': ObjectId('6acdd3cb61f890e54daac88b'),
+    '3': ObjectId('6acdd3cb61f890e54daac88c'),
+    '4': ObjectId('6acdd3cb61f890e54daac88d'),
+    '5': ObjectId('6acdd3cb61f890e54daac88e'),
+    '6': ObjectId('6acdd3cb61f890e54daac88f'),
+    '7': ObjectId('6acdd3cb61f890e54daac890'),
+    '8': ObjectId('6acdd3cb61f890e54daac891'),
+    '9': ObjectId('6acdd3cb61f890e54daac892'),
+    '10': ObjectId('6acdd3cb61f890e54daac893'),
+    '11': ObjectId('6acdd3cb61f890e54daac894'),
+    '12': ObjectId('6acdd3cb61f890e54daac895'),
+    '13': ObjectId('6acdd3cb61f890e54daac896'),
+    '14': ObjectId('6acdd3cb61f890e54daac897'),
+    '15': ObjectId('6acdd3cb61f890e54daac898'),
+    '16': ObjectId('6acdd3cb61f890e54daac899'),
+    '17': ObjectId('6acdd3cb61f890e54daac89a'),
+    '18': ObjectId('6acdd3cb61f890e54daac89b'),
+    '19': ObjectId('6acdd3cb61f890e54daac89c'),
+    '20': ObjectId('6acdd3cb61f890e54daac89d'),
+    '21': ObjectId('6acdd3cb61f890e54daac89e'),
+    '22': ObjectId('6acdd3cb61f890e54daac89f')
+  }
+}
+
+//  indexes for quick lookup by device ID 
+db.sensor_logs.createIndex(
+  {device_id:1}
+)
+device_id_1
+//  indexes for quick lookup by timestamp
+db.sensor_logs.createIndex(
+  {timestamp:1}
+)
+timestamp_1
+db.sensor_logs.getIndexes()
+[
+  {
+    v: 2,
+    key: { _id: 1 },
+    name: '_id_',
+    collation: { locale: 'simple' }
+  },
+  {
+    v: 2,
+    key: { device_id: 1 },
+    name: 'device_id_1',
+    collation: { locale: 'simple' }
+  },
+  {
+    v: 2,
+    key: { timestamp: 1 },
+    name: 'timestamp_1',
+    collation: { locale: 'simple' }
+  }
+]
+
+

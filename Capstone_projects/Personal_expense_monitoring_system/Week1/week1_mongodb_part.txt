@@ -1,0 +1,92 @@
+use capstone_project
+
+db.receipts.insertMany([
+  // Arun (user 1)
+  {
+    expense_id: 2, user_id: 1, store: "Fresh Mart",
+    receipt_date: ISODate("2026-01-22"),
+    items: [
+      { name: "Rice 5kg",   qty: 1, price: 150.00 },
+      { name: "Dal 1kg",    qty: 1, price: 90.00 },
+      { name: "Vegetables", qty: 1, price: 80.00 }
+    ],
+    total: 320.00, payment_method: "UPI", notes: "Monthly grocery run"
+  },
+  {
+    expense_id: 4, user_id: 1, store: "Saravana Mess",
+    receipt_date: ISODate("2026-02-08"),
+    items: [
+      { name: "Meals combo", qty: 2, price: 110.00 },
+      { name: "Fresh juice", qty: 1, price: 50.00 }
+    ],
+    total: 270.00, payment_method: "Cash"
+  },
+  {
+    expense_id: 5, user_id: 1, store: "Digital World",
+    receipt_date: ISODate("2026-02-14"),
+    items: [
+      { name: "Laptop 15 inch", qty: 1, price: 25000.00 }
+    ],
+    total: 25000.00, payment_method: "Card",
+    notes: "1 year warranty",
+    scanned_image_url: "receipts/arun_laptop_2026-02-14.jpg"
+  },
+
+  // Priya (user 2)
+  {
+    expense_id: 6, user_id: 2, store: "Anjappar",
+    receipt_date: ISODate("2026-01-18"),
+    items: [
+      { name: "Chicken biryani", qty: 1, price: 180.00 },
+      { name: "Raita",           qty: 1, price: 40.00 }
+    ],
+    total: 220.00, payment_method: "UPI"
+  },
+  {
+    expense_id: 9, user_id: 2, store: "Fresh Mart",
+    receipt_date: ISODate("2026-02-12"),
+    items: [
+      { name: "Vegetables", qty: 1, price: 120.00 },
+      { name: "Milk 2L",    qty: 1, price: 70.00 },
+      { name: "Eggs (12)",  qty: 1, price: 50.00 }
+    ],
+    total: 240.00, payment_method: "UPI", notes: "Weekly groceries"
+  },
+  {
+    expense_id: 10, user_id: 2, store: "LearnHub Online",
+    receipt_date: ISODate("2026-02-20"),
+    items: [
+      { name: "Python course enrollment", qty: 1, price: 800.00 }
+    ],
+    total: 800.00, payment_method: "Card",
+    scanned_image_url: "receipts/priya_course_2026-02-20.pdf"
+  },
+
+  // Kavin (user 3)
+  {
+    expense_id: 11, user_id: 3, store: "Hotel Annapoorna",
+    receipt_date: ISODate("2026-02-14"),
+    items: [
+      { name: "Paneer butter masala", qty: 1, price: 180.00 },
+      { name: "Naan",                 qty: 3, price: 30.00 },
+      { name: "Lassi",                qty: 1, price: 30.00 }
+    ],
+])
+
+
+// index for user lookup and receipt_date in reverse order
+db.receipts.createIndex(
+  {
+    user_id:1,
+    receipt_date:-1
+  }
+)
+
+//index for expenses lookup
+db.receipts.createIndex(
+    {expense_id:1},
+  	{unique:true}
+)
+
+//checking the indexes
+db.receipts.getIndexes()
