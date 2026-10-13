@@ -1,3 +1,4 @@
+
 Embedding: 
 	1.Store related data inside same document
 	2.Use:when the data belongs to one entity
