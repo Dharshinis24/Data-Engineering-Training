@@ -1,0 +1,4 @@
+Activity 1: Interview preparation
+Activity 2: Mock interview
+Activity 3: Attending interview
+Activity 4: Selection
