@@ -1,0 +1,1524 @@
+expense_id,user_id,user_name,category,amount,expense_date,description,month
+1,1,Arun,Transport,246.73,2026-01-01,Metro card recharge,2026-01
+2,2,Priya,Food,360.05,2026-01-01,Snacks,2026-01
+3,2,Priya,Food,120.66,2026-01-01,Groceries,2026-01
+4,2,Priya,Food,383.96,2026-01-01,Lunch,2026-01
+5,3,Kavin,Transport,198.93,2026-01-01,Unknown,2026-01
+6,4,Meena,Food,444.32,2026-01-01,Lunch,2026-01
+7,4,Meena,Transport,62.36,2026-01-01,Cab ride,2026-01
+8,4,Meena,Shopping,2736.28,2026-01-01,Shoes,2026-01
+9,5,Rahul,Shopping,1581.29,2026-01-01,Headphones,2026-01
+10,7,Suresh,Food,240.85,2026-01-01,Lunch,2026-01
+11,7,Suresh,Transport,64.07,2026-01-01,Fuel,2026-01
+12,8,Anitha,Food,190.56,2026-01-01,Restaurant,2026-01
+13,1,Arun,Rent,6700.0,2026-01-02,Monthly rent,2026-01
+14,2,Priya,Food,499.64,2026-01-02,Groceries,2026-01
+15,2,Priya,Transport,204.08,2026-01-02,Auto fare,2026-01
+16,2,Priya,Transport,271.04,2026-01-02,Fuel,2026-01
+17,3,Kavin,Food,302.92,2026-01-02,Lunch,2026-01
+18,4,Meena,Food,496.16,2026-01-02,Dinner,2026-01
+19,4,Meena,Entertainment,415.18,2026-01-02,Gaming,2026-01
+20,2,Priya,Rent,12200.0,2026-01-03,Monthly rent,2026-01
+21,2,Priya,Food,162.09,2026-01-03,Coffee,2026-01
+22,2,Priya,Transport,95.88,2026-01-03,Bus pass top-up,2026-01
+23,3,Kavin,Entertainment,1089.66,2026-01-03,Concert,2026-01
+24,5,Rahul,Rent,9500.0,2026-01-03,Monthly rent,2026-01
+25,5,Rahul,Food,497.93,2026-01-03,Coffee,2026-01
+26,6,Divya,Food,345.53,2026-01-03,Coffee,2026-01
+27,6,Divya,Shopping,2968.28,2026-01-03,Home supplies,2026-01
+28,7,Suresh,Food,447.29,2026-01-03,Snacks,2026-01
+29,7,Suresh,Transport,265.64,2026-01-03,Metro card recharge,2026-01
+30,1,Arun,Food,432.9,2026-01-04,Unknown,2026-01
+31,1,Arun,Transport,217.1,2026-01-04,Metro card recharge,2026-01
+32,2,Priya,Food,301.81,2026-01-04,Groceries,2026-01
+33,3,Kavin,Food,186.54,2026-01-04,Snacks,2026-01
+34,3,Kavin,Food,101.6,2026-01-04,Restaurant,2026-01
+35,6,Divya,Rent,12900.0,2026-01-04,Monthly rent,2026-01
+36,7,Suresh,Rent,6600.0,2026-01-04,Monthly rent,2026-01
+37,7,Suresh,Food,298.52,2026-01-04,Unknown,2026-01
+38,7,Suresh,Food,329.46,2026-01-04,Lunch,2026-01
+39,8,Anitha,Rent,11600.0,2026-01-04,Monthly rent,2026-01
+40,1,Arun,Food,380.11,2026-01-05,Coffee,2026-01
+41,1,Arun,Transport,99.98,2026-01-05,Cab ride,2026-01
+42,2,Priya,Education,970.35,2026-01-05,Exam registration,2026-01
+43,3,Kavin,Rent,11300.0,2026-01-05,Monthly rent,2026-01
+44,3,Kavin,Food,419.69,2026-01-05,Dinner,2026-01
+45,3,Kavin,Food,150.41,2026-01-05,Snacks,2026-01
+46,3,Kavin,Shopping,1786.46,2026-01-05,Headphones,2026-01
+47,3,Kavin,Entertainment,1161.55,2026-01-05,OTT subscription,2026-01
+48,4,Meena,Rent,9500.0,2026-01-05,Monthly rent,2026-01
+49,5,Rahul,Food,260.66,2026-01-05,Dinner,2026-01
+50,5,Rahul,Transport,219.43,2026-01-05,Cab ride,2026-01
+51,6,Divya,Food,470.27,2026-01-05,Coffee,2026-01
+52,6,Divya,Entertainment,288.4,2026-01-05,Concert,2026-01
+53,7,Suresh,Food,169.81,2026-01-05,Dinner,2026-01
+54,7,Suresh,Food,430.7,2026-01-05,Dinner,2026-01
+55,8,Anitha,Food,457.16,2026-01-05,Dinner,2026-01
+56,1,Arun,Utilities,2458.56,2026-01-06,Water bill,2026-01
+57,1,Arun,Food,357.55,2026-01-06,Restaurant,2026-01
+58,2,Priya,Utilities,2494.96,2026-01-06,Electricity bill,2026-01
+59,3,Kavin,Food,120.21,2026-01-06,Lunch,2026-01
+60,3,Kavin,Education,2189.76,2026-01-06,Workshop fee,2026-01
+61,4,Meena,Food,429.24,2026-01-06,Lunch,2026-01
+62,4,Meena,Food,257.17,2026-01-06,Breakfast,2026-01
+63,4,Meena,Food,490.24,2026-01-06,Restaurant,2026-01
+64,5,Rahul,Transport,253.0,2026-01-06,Cab ride,2026-01
+65,6,Divya,Food,170.67,2026-01-06,Dinner,2026-01
+66,6,Divya,Food,131.26,2026-01-06,Breakfast,2026-01
+67,6,Divya,Transport,104.89,2026-01-06,Metro card recharge,2026-01
+68,8,Anitha,Transport,241.2,2026-01-06,Cab ride,2026-01
+69,4,Meena,Food,400.11,2026-01-07,Breakfast,2026-01
+70,5,Rahul,Food,178.07,2026-01-07,Lunch,2026-01
+71,6,Divya,Food,488.28,2026-01-07,Restaurant,2026-01
+72,8,Anitha,Food,233.64,2026-01-07,Unknown,2026-01
+73,8,Anitha,Transport,96.67,2026-01-07,Metro card recharge,2026-01
+74,8,Anitha,Transport,231.0,2026-01-07,Fuel,2026-01
+75,2,Priya,Food,420.39,2026-01-08,Groceries,2026-01
+76,3,Kavin,Transport,268.47,2026-01-08,Cab ride,2026-01
+77,3,Kavin,Transport,202.69,2026-01-08,Auto fare,2026-01
+78,5,Rahul,Entertainment,975.79,2026-01-08,Concert,2026-01
+79,8,Anitha,Food,264.14,2026-01-08,Dinner,2026-01
+80,8,Anitha,Food,330.12,2026-01-08,Unknown,2026-01
+81,1,Arun,Food,403.24,2026-01-09,Snacks,2026-01
+82,1,Arun,Transport,220.62,2026-01-09,Metro card recharge,2026-01
+83,2,Priya,Food,114.47,2026-01-09,Snacks,2026-01
+84,4,Meena,Food,315.58,2026-01-09,Coffee,2026-01
+85,4,Meena,Transport,233.68,2026-01-09,Unknown,2026-01
+86,4,Meena,Transport,154.66,2026-01-09,Bus pass top-up,2026-01
+87,4,Meena,Transport,180.48,2026-01-09,Auto fare,2026-01
+88,5,Rahul,Transport,278.32,2026-01-09,Metro card recharge,2026-01
+89,5,Rahul,Transport,291.13,2026-01-09,Fuel,2026-01
+90,4,Meena,Transport,191.02,2026-01-10,Metro card recharge,2026-01
+91,6,Divya,Transport,292.36,2026-01-10,Auto fare,2026-01
+92,7,Suresh,Food,271.36,2026-01-10,Groceries,2026-01
+93,8,Anitha,Utilities,1459.37,2026-01-10,Water bill,2026-01
+94,8,Anitha,Food,155.8,2026-01-10,Lunch,2026-01
+95,3,Kavin,Food,434.5,2026-01-11,Snacks,2026-01
+96,6,Divya,Utilities,1217.46,2026-01-11,Electricity bill,2026-01
+97,8,Anitha,Food,357.12,2026-01-11,Lunch,2026-01
+98,8,Anitha,Food,496.35,2026-01-11,Breakfast,2026-01
+99,1,Arun,Food,230.33,2026-01-12,Restaurant,2026-01
+100,3,Kavin,Shopping,1519.9,2026-01-12,Headphones,2026-01
+101,8,Anitha,Transport,245.69,2026-01-12,Auto fare,2026-01
+102,1,Arun,Food,277.37,2026-01-13,Coffee,2026-01
+103,3,Kavin,Food,348.72,2026-01-13,Breakfast,2026-01
+104,3,Kavin,Entertainment,882.58,2026-01-13,Gaming,2026-01
+105,4,Meena,Utilities,859.23,2026-01-13,Internet bill,2026-01
+106,4,Meena,Food,183.35,2026-01-13,Lunch,2026-01
+107,4,Meena,Entertainment,24696.41,2026-01-13,Destination trip,2026-01
+108,5,Rahul,Utilities,1583.58,2026-01-13,Mobile recharge,2026-01
+109,7,Suresh,Food,183.58,2026-01-13,Restaurant,2026-01
+110,8,Anitha,Food,322.59,2026-01-13,Groceries,2026-01
+111,1,Arun,Food,321.83,2026-01-14,Lunch,2026-01
+112,1,Arun,Food,411.35,2026-01-14,Restaurant,2026-01
+113,2,Priya,Food,180.71,2026-01-14,Groceries,2026-01
+114,2,Priya,Shopping,871.1,2026-01-14,Phone accessories,2026-01
+115,3,Kavin,Food,217.9,2026-01-14,Snacks,2026-01
+116,4,Meena,Food,395.12,2026-01-14,Dinner,2026-01
+117,5,Rahul,Food,320.87,2026-01-14,Breakfast,2026-01
+118,6,Divya,Food,471.83,2026-01-14,Lunch,2026-01
+119,7,Suresh,Food,332.18,2026-01-14,Breakfast,2026-01
+120,8,Anitha,Food,396.33,2026-01-14,Lunch,2026-01
+121,2,Priya,Food,410.71,2026-01-15,Lunch,2026-01
+122,2,Priya,Entertainment,319.22,2026-01-15,Weekend outing,2026-01
+123,3,Kavin,Utilities,1414.61,2026-01-15,Water bill,2026-01
+124,4,Meena,Food,137.1,2026-01-15,Unknown,2026-01
+125,4,Meena,Entertainment,1135.54,2026-01-15,Gaming,2026-01
+126,5,Rahul,Food,262.94,2026-01-15,Breakfast,2026-01
+127,6,Divya,Transport,177.46,2026-01-15,Fuel,2026-01
+128,6,Divya,Transport,285.64,2026-01-15,Fuel,2026-01
+129,6,Divya,Shopping,1144.74,2026-01-15,Phone accessories,2026-01
+130,7,Suresh,Utilities,933.86,2026-01-15,Internet bill,2026-01
+131,7,Suresh,Entertainment,1086.33,2026-01-15,Movie tickets,2026-01
+132,1,Arun,Food,161.72,2026-01-16,Groceries,2026-01
+133,2,Priya,Entertainment,604.03,2026-01-16,Weekend outing,2026-01
+134,3,Kavin,Food,227.05,2026-01-16,Dinner,2026-01
+135,8,Anitha,Food,191.98,2026-01-16,Restaurant,2026-01
+136,8,Anitha,Transport,58.23,2026-01-16,Cab ride,2026-01
+137,2,Priya,Food,352.0,2026-01-17,Coffee,2026-01
+138,2,Priya,Shopping,1945.04,2026-01-17,Shoes,2026-01
+139,2,Priya,Shopping,2123.08,2026-01-17,Home supplies,2026-01
+140,6,Divya,Food,469.98,2026-01-17,Groceries,2026-01
+141,6,Divya,Food,104.82,2026-01-17,Restaurant,2026-01
+142,7,Suresh,Transport,156.56,2026-01-17,Bus pass top-up,2026-01
+143,8,Anitha,Food,422.98,2026-01-17,Breakfast,2026-01
+144,1,Arun,Food,274.86,2026-01-18,Snacks,2026-01
+145,1,Arun,Transport,84.95,2026-01-18,Bus pass top-up,2026-01
+146,1,Arun,Shopping,1883.95,2026-01-18,Home supplies,2026-01
+147,1,Arun,Entertainment,503.95,2026-01-18,Concert,2026-01
+148,2,Priya,Transport,86.28,2026-01-18,Bus pass top-up,2026-01
+149,3,Kavin,Food,150.76,2026-01-18,Snacks,2026-01
+150,3,Kavin,Food,452.15,2026-01-18,Restaurant,2026-01
+151,3,Kavin,Transport,149.04,2026-01-18,Metro card recharge,2026-01
+152,3,Kavin,Transport,239.61,2026-01-18,Metro card recharge,2026-01
+153,4,Meena,Transport,187.73,2026-01-18,Bus pass top-up,2026-01
+154,4,Meena,Transport,146.34,2026-01-18,Metro card recharge,2026-01
+155,7,Suresh,Shopping,629.37,2026-01-18,Phone accessories,2026-01
+156,8,Anitha,Food,287.36,2026-01-18,Snacks,2026-01
+157,8,Anitha,Food,284.01,2026-01-18,Lunch,2026-01
+158,8,Anitha,Shopping,2131.97,2026-01-18,Headphones,2026-01
+159,4,Meena,Food,400.93,2026-01-19,Lunch,2026-01
+160,4,Meena,Transport,171.55,2026-01-19,Metro card recharge,2026-01
+161,4,Meena,Education,1794.96,2026-01-19,Online course fee,2026-01
+162,8,Anitha,Shopping,681.14,2026-01-19,Shoes,2026-01
+163,2,Priya,Food,458.81,2026-01-20,Groceries,2026-01
+164,4,Meena,Food,362.43,2026-01-20,Lunch,2026-01
+165,5,Rahul,Food,143.46,2026-01-20,Coffee,2026-01
+166,5,Rahul,Food,237.86,2026-01-20,Restaurant,2026-01
+167,6,Divya,Food,161.43,2026-01-20,Snacks,2026-01
+168,7,Suresh,Food,113.04,2026-01-20,Restaurant,2026-01
+169,1,Arun,Transport,226.29,2026-01-21,Bus pass top-up,2026-01
+170,4,Meena,Food,147.56,2026-01-21,Coffee,2026-01
+171,5,Rahul,Food,455.96,2026-01-21,Restaurant,2026-01
+172,6,Divya,Food,130.01,2026-01-21,Coffee,2026-01
+173,6,Divya,Entertainment,539.74,2026-01-21,OTT subscription,2026-01
+174,7,Suresh,Food,168.13,2026-01-21,Groceries,2026-01
+175,8,Anitha,Entertainment,1041.12,2026-01-21,Weekend outing,2026-01
+176,1,Arun,Food,488.28,2026-01-22,Unknown,2026-01
+177,1,Arun,Food,190.76,2026-01-22,Breakfast,2026-01
+178,2,Priya,Food,434.76,2026-01-22,Lunch,2026-01
+179,2,Priya,Transport,93.28,2026-01-22,Bus pass top-up,2026-01
+180,3,Kavin,Food,390.07,2026-01-22,Lunch,2026-01
+181,3,Kavin,Transport,231.44,2026-01-22,Unknown,2026-01
+182,5,Rahul,Transport,97.98,2026-01-22,Metro card recharge,2026-01
+183,6,Divya,Food,439.59,2026-01-22,Coffee,2026-01
+184,7,Suresh,Food,391.15,2026-01-22,Groceries,2026-01
+185,1,Arun,Food,151.25,2026-01-23,Unknown,2026-01
+186,3,Kavin,Food,107.61,2026-01-23,Unknown,2026-01
+187,4,Meena,Food,247.16,2026-01-23,Breakfast,2026-01
+188,5,Rahul,Food,290.88,2026-01-23,Groceries,2026-01
+189,5,Rahul,Food,417.2,2026-01-23,Lunch,2026-01
+190,6,Divya,Transport,142.25,2026-01-23,Cab ride,2026-01
+191,6,Divya,Transport,103.81,2026-01-23,Cab ride,2026-01
+192,1,Arun,Food,286.69,2026-01-24,Lunch,2026-01
+193,1,Arun,Food,397.9,2026-01-24,Snacks,2026-01
+194,4,Meena,Food,167.2,2026-01-24,Coffee,2026-01
+195,4,Meena,Food,170.52,2026-01-24,Groceries,2026-01
+196,4,Meena,Transport,256.65,2026-01-24,Unknown,2026-01
+197,4,Meena,Shopping,929.9,2026-01-24,Home supplies,2026-01
+198,5,Rahul,Food,342.52,2026-01-24,Lunch,2026-01
+199,5,Rahul,Food,479.72,2026-01-24,Unknown,2026-01
+200,5,Rahul,Food,433.65,2026-01-24,Dinner,2026-01
+201,5,Rahul,Entertainment,578.32,2026-01-24,Concert,2026-01
+202,7,Suresh,Food,205.09,2026-01-24,Groceries,2026-01
+203,8,Anitha,Shopping,751.31,2026-01-24,Phone accessories,2026-01
+204,1,Arun,Food,151.97,2026-01-25,Lunch,2026-01
+205,1,Arun,Transport,146.87,2026-01-25,Cab ride,2026-01
+206,1,Arun,Transport,164.73,2026-01-25,Fuel,2026-01
+207,2,Priya,Transport,209.1,2026-01-25,Cab ride,2026-01
+208,3,Kavin,Food,377.24,2026-01-25,Lunch,2026-01
+209,7,Suresh,Transport,172.22,2026-01-25,Auto fare,2026-01
+210,8,Anitha,Food,198.9,2026-01-25,Restaurant,2026-01
+211,8,Anitha,Food,311.85,2026-01-25,Lunch,2026-01
+212,2,Priya,Food,464.26,2026-01-26,Lunch,2026-01
+213,2,Priya,Food,420.59,2026-01-26,Snacks,2026-01
+214,2,Priya,Food,177.22,2026-01-26,Coffee,2026-01
+215,3,Kavin,Food,111.93,2026-01-26,Groceries,2026-01
+216,3,Kavin,Food,456.01,2026-01-26,Dinner,2026-01
+217,4,Meena,Transport,227.63,2026-01-26,Fuel,2026-01
+218,5,Rahul,Transport,108.81,2026-01-26,Cab ride,2026-01
+219,5,Rahul,Entertainment,413.07,2026-01-26,Concert,2026-01
+220,7,Suresh,Food,327.1,2026-01-26,Dinner,2026-01
+221,7,Suresh,Transport,72.23,2026-01-26,Bus pass top-up,2026-01
+222,8,Anitha,Transport,70.2,2026-01-26,Fuel,2026-01
+223,1,Arun,Food,248.32,2026-01-27,Breakfast,2026-01
+224,1,Arun,Shopping,2412.5,2026-01-27,Headphones,2026-01
+225,2,Priya,Food,196.33,2026-01-27,Groceries,2026-01
+226,2,Priya,Food,435.19,2026-01-27,Snacks,2026-01
+227,3,Kavin,Food,395.43,2026-01-27,Snacks,2026-01
+228,4,Meena,Food,361.42,2026-01-27,Groceries,2026-01
+229,4,Meena,Shopping,502.67,2026-01-27,Clothes,2026-01
+230,6,Divya,Food,281.96,2026-01-27,Lunch,2026-01
+231,6,Divya,Transport,144.55,2026-01-27,Auto fare,2026-01
+232,6,Divya,Transport,110.42,2026-01-27,Unknown,2026-01
+233,7,Suresh,Transport,108.68,2026-01-27,Fuel,2026-01
+234,8,Anitha,Food,154.67,2026-01-27,Coffee,2026-01
+235,8,Anitha,Transport,224.61,2026-01-27,Fuel,2026-01
+236,1,Arun,Food,431.05,2026-01-28,Groceries,2026-01
+237,4,Meena,Entertainment,669.96,2026-01-28,Weekend outing,2026-01
+238,6,Divya,Food,488.08,2026-01-28,Coffee,2026-01
+239,7,Suresh,Shopping,875.32,2026-01-28,Phone accessories,2026-01
+240,8,Anitha,Food,219.5,2026-01-28,Groceries,2026-01
+241,8,Anitha,Transport,249.38,2026-01-28,Cab ride,2026-01
+242,1,Arun,Food,287.82,2026-01-29,Dinner,2026-01
+243,3,Kavin,Food,497.23,2026-01-29,Unknown,2026-01
+244,2,Priya,Food,439.76,2026-01-30,Lunch,2026-01
+245,3,Kavin,Shopping,2490.07,2026-01-30,Clothes,2026-01
+246,4,Meena,Food,176.92,2026-01-30,Restaurant,2026-01
+247,6,Divya,Food,266.9,2026-01-30,Snacks,2026-01
+248,7,Suresh,Food,261.31,2026-01-30,Groceries,2026-01
+249,7,Suresh,Food,389.5,2026-01-30,Dinner,2026-01
+250,8,Anitha,Entertainment,645.27,2026-01-30,Movie tickets,2026-01
+251,2,Priya,Food,408.84,2026-01-31,Restaurant,2026-01
+252,2,Priya,Transport,202.89,2026-01-31,Fuel,2026-01
+253,2,Priya,Transport,164.64,2026-01-31,Fuel,2026-01
+254,5,Rahul,Food,218.52,2026-01-31,Breakfast,2026-01
+255,8,Anitha,Food,437.76,2026-01-31,Groceries,2026-01
+256,8,Anitha,Education,2058.93,2026-01-31,Online course fee,2026-01
+257,1,Arun,Rent,6700.0,2026-02-01,Monthly rent,2026-02
+258,1,Arun,Food,136.02,2026-02-01,Coffee,2026-02
+259,3,Kavin,Transport,289.83,2026-02-01,Fuel,2026-02
+260,5,Rahul,Rent,9500.0,2026-02-01,Monthly rent,2026-02
+261,6,Divya,Rent,12900.0,2026-02-01,Monthly rent,2026-02
+262,6,Divya,Food,345.75,2026-02-01,Dinner,2026-02
+263,6,Divya,Entertainment,1178.05,2026-02-01,Gaming,2026-02
+264,1,Arun,Food,212.55,2026-02-02,Restaurant,2026-02
+265,2,Priya,Entertainment,669.33,2026-02-02,Gaming,2026-02
+266,4,Meena,Rent,9500.0,2026-02-02,Monthly rent,2026-02
+267,4,Meena,Food,242.95,2026-02-02,Dinner,2026-02
+268,4,Meena,Entertainment,294.64,2026-02-02,Unknown,2026-02
+269,7,Suresh,Food,404.9,2026-02-02,Lunch,2026-02
+270,8,Anitha,Transport,105.0,2026-02-02,Fuel,2026-02
+271,1,Arun,Food,461.04,2026-02-03,Groceries,2026-02
+272,1,Arun,Transport,71.11,2026-02-03,Metro card recharge,2026-02
+273,2,Priya,Rent,12200.0,2026-02-03,Monthly rent,2026-02
+274,3,Kavin,Food,461.59,2026-02-03,Snacks,2026-02
+275,3,Kavin,Food,181.76,2026-02-03,Breakfast,2026-02
+276,6,Divya,Entertainment,523.9,2026-02-03,Weekend outing,2026-02
+277,8,Anitha,Food,355.12,2026-02-03,Lunch,2026-02
+278,8,Anitha,Food,395.93,2026-02-03,Lunch,2026-02
+279,1,Arun,Food,484.76,2026-02-04,Dinner,2026-02
+280,2,Priya,Food,128.82,2026-02-04,Restaurant,2026-02
+281,2,Priya,Shopping,1620.61,2026-02-04,Phone accessories,2026-02
+282,3,Kavin,Transport,241.2,2026-02-04,Bus pass top-up,2026-02
+283,4,Meena,Food,444.11,2026-02-04,Lunch,2026-02
+284,4,Meena,Food,146.13,2026-02-04,Unknown,2026-02
+285,5,Rahul,Entertainment,1138.51,2026-02-04,Concert,2026-02
+286,6,Divya,Food,161.08,2026-02-04,Lunch,2026-02
+287,6,Divya,Food,105.51,2026-02-04,Breakfast,2026-02
+288,7,Suresh,Rent,6600.0,2026-02-04,Unknown,2026-02
+289,7,Suresh,Food,377.54,2026-02-04,Restaurant,2026-02
+290,7,Suresh,Shopping,1091.75,2026-02-04,Phone accessories,2026-02
+291,7,Suresh,Entertainment,1131.46,2026-02-04,Movie tickets,2026-02
+292,8,Anitha,Food,146.78,2026-02-04,Coffee,2026-02
+293,8,Anitha,Transport,162.8,2026-02-04,Bus pass top-up,2026-02
+294,1,Arun,Food,300.42,2026-02-05,Restaurant,2026-02
+295,1,Arun,Food,378.53,2026-02-05,Breakfast,2026-02
+296,1,Arun,Shopping,758.51,2026-02-05,Clothes,2026-02
+297,1,Arun,Entertainment,682.3,2026-02-05,Weekend outing,2026-02
+298,2,Priya,Food,225.56,2026-02-05,Groceries,2026-02
+299,3,Kavin,Rent,11300.0,2026-02-05,Monthly rent,2026-02
+300,3,Kavin,Food,373.82,2026-02-05,Groceries,2026-02
+301,5,Rahul,Transport,279.35,2026-02-05,Bus pass top-up,2026-02
+302,6,Divya,Shopping,1340.71,2026-02-05,Clothes,2026-02
+303,7,Suresh,Food,103.45,2026-02-05,Groceries,2026-02
+304,8,Anitha,Rent,11600.0,2026-02-05,Monthly rent,2026-02
+305,8,Anitha,Food,117.99,2026-02-05,Lunch,2026-02
+306,1,Arun,Transport,132.47,2026-02-06,Fuel,2026-02
+307,3,Kavin,Food,250.88,2026-02-06,Dinner,2026-02
+308,4,Meena,Food,455.35,2026-02-06,Groceries,2026-02
+309,5,Rahul,Food,307.57,2026-02-06,Unknown,2026-02
+310,5,Rahul,Food,264.02,2026-02-06,Breakfast,2026-02
+311,5,Rahul,Food,285.53,2026-02-06,Lunch,2026-02
+312,7,Suresh,Transport,188.97,2026-02-06,Bus pass top-up,2026-02
+313,8,Anitha,Utilities,2081.95,2026-02-06,Electricity bill,2026-02
+314,8,Anitha,Transport,59.99,2026-02-06,Metro card recharge,2026-02
+315,2,Priya,Food,335.32,2026-02-07,Snacks,2026-02
+316,2,Priya,Food,328.98,2026-02-07,Dinner,2026-02
+317,3,Kavin,Utilities,1598.66,2026-02-07,Electricity bill,2026-02
+318,3,Kavin,Food,139.57,2026-02-07,Unknown,2026-02
+319,3,Kavin,Transport,173.88,2026-02-07,Metro card recharge,2026-02
+320,4,Meena,Transport,75.82,2026-02-07,Auto fare,2026-02
+321,5,Rahul,Food,391.93,2026-02-07,Groceries,2026-02
+322,5,Rahul,Shopping,626.34,2026-02-07,Phone accessories,2026-02
+323,6,Divya,Food,282.62,2026-02-07,Dinner,2026-02
+324,7,Suresh,Transport,238.27,2026-02-07,Metro card recharge,2026-02
+325,8,Anitha,Food,231.51,2026-02-07,Snacks,2026-02
+326,1,Arun,Food,487.67,2026-02-08,Lunch,2026-02
+327,2,Priya,Food,233.65,2026-02-08,Breakfast,2026-02
+328,4,Meena,Food,344.19,2026-02-08,Dinner,2026-02
+329,5,Rahul,Utilities,865.7,2026-02-08,Unknown,2026-02
+330,5,Rahul,Transport,285.95,2026-02-08,Auto fare,2026-02
+331,5,Rahul,Transport,90.49,2026-02-08,Auto fare,2026-02
+332,8,Anitha,Transport,280.83,2026-02-08,Fuel,2026-02
+333,1,Arun,Food,364.77,2026-02-09,Groceries,2026-02
+334,1,Arun,Food,352.11,2026-02-09,Snacks,2026-02
+335,1,Arun,Transport,196.02,2026-02-09,Metro card recharge,2026-02
+336,2,Priya,Food,114.42,2026-02-09,Dinner,2026-02
+337,2,Priya,Food,414.97,2026-02-09,Dinner,2026-02
+338,2,Priya,Education,2295.63,2026-02-09,Online course fee,2026-02
+339,4,Meena,Food,244.3,2026-02-09,Lunch,2026-02
+340,4,Meena,Transport,145.18,2026-02-09,Cab ride,2026-02
+341,5,Rahul,Food,418.42,2026-02-09,Lunch,2026-02
+342,6,Divya,Food,155.92,2026-02-09,Lunch,2026-02
+343,7,Suresh,Food,200.34,2026-02-09,Restaurant,2026-02
+344,2,Priya,Transport,102.26,2026-02-10,Auto fare,2026-02
+345,2,Priya,Entertainment,955.33,2026-02-10,Movie tickets,2026-02
+346,3,Kavin,Food,481.96,2026-02-10,Coffee,2026-02
+347,4,Meena,Transport,173.42,2026-02-10,Fuel,2026-02
+348,6,Divya,Food,438.28,2026-02-10,Coffee,2026-02
+349,8,Anitha,Food,359.44,2026-02-10,Unknown,2026-02
+350,8,Anitha,Food,186.65,2026-02-10,Coffee,2026-02
+351,8,Anitha,Food,371.79,2026-02-10,Coffee,2026-02
+352,1,Arun,Food,135.06,2026-02-11,Dinner,2026-02
+353,3,Kavin,Food,306.81,2026-02-11,Groceries,2026-02
+354,4,Meena,Transport,283.19,2026-02-11,Cab ride,2026-02
+355,4,Meena,Shopping,1323.16,2026-02-11,Shoes,2026-02
+356,4,Meena,Entertainment,545.73,2026-02-11,OTT subscription,2026-02
+357,5,Rahul,Food,175.53,2026-02-11,Lunch,2026-02
+358,6,Divya,Food,360.53,2026-02-11,Coffee,2026-02
+359,6,Divya,Food,312.18,2026-02-11,Lunch,2026-02
+360,6,Divya,Transport,186.75,2026-02-11,Fuel,2026-02
+361,7,Suresh,Food,308.58,2026-02-11,Lunch,2026-02
+362,7,Suresh,Food,159.98,2026-02-11,Coffee,2026-02
+363,7,Suresh,Food,104.37,2026-02-11,Dinner,2026-02
+364,7,Suresh,Transport,199.11,2026-02-11,Fuel,2026-02
+365,8,Anitha,Food,434.35,2026-02-11,Snacks,2026-02
+366,2,Priya,Food,263.51,2026-02-12,Coffee,2026-02
+367,2,Priya,Food,289.65,2026-02-12,Lunch,2026-02
+368,3,Kavin,Food,227.65,2026-02-12,Dinner,2026-02
+369,3,Kavin,Food,340.71,2026-02-12,Snacks,2026-02
+370,3,Kavin,Food,152.44,2026-02-12,Dinner,2026-02
+371,4,Meena,Food,170.46,2026-02-12,Groceries,2026-02
+372,4,Meena,Food,229.57,2026-02-12,Breakfast,2026-02
+373,5,Rahul,Food,398.83,2026-02-12,Lunch,2026-02
+374,5,Rahul,Food,469.34,2026-02-12,Groceries,2026-02
+375,5,Rahul,Transport,149.8,2026-02-12,Cab ride,2026-02
+376,6,Divya,Food,424.12,2026-02-12,Groceries,2026-02
+377,7,Suresh,Transport,80.98,2026-02-12,Auto fare,2026-02
+378,1,Arun,Food,252.41,2026-02-13,Lunch,2026-02
+379,1,Arun,Food,208.9,2026-02-13,Groceries,2026-02
+380,1,Arun,Food,180.95,2026-02-13,Coffee,2026-02
+381,1,Arun,Transport,239.63,2026-02-13,Cab ride,2026-02
+382,2,Priya,Utilities,1878.87,2026-02-13,Water bill,2026-02
+383,2,Priya,Transport,127.74,2026-02-13,Metro card recharge,2026-02
+384,3,Kavin,Transport,61.29,2026-02-13,Bus pass top-up,2026-02
+385,4,Meena,Transport,208.29,2026-02-13,Fuel,2026-02
+386,4,Meena,Shopping,1919.84,2026-02-13,Shoes,2026-02
+387,4,Meena,Shopping,2146.88,2026-02-13,Shoes,2026-02
+388,6,Divya,Utilities,1284.71,2026-02-13,Mobile recharge,2026-02
+389,6,Divya,Food,481.19,2026-02-13,Lunch,2026-02
+390,6,Divya,Food,265.74,2026-02-13,Breakfast,2026-02
+391,7,Suresh,Utilities,1511.58,2026-02-13,Unknown,2026-02
+392,7,Suresh,Food,230.76,2026-02-13,Snacks,2026-02
+393,8,Anitha,Transport,189.67,2026-02-13,Auto fare,2026-02
+394,8,Anitha,Shopping,2566.03,2026-02-13,Home supplies,2026-02
+395,1,Arun,Transport,158.02,2026-02-14,Metro card recharge,2026-02
+396,3,Kavin,Transport,96.44,2026-02-14,Bus pass top-up,2026-02
+397,3,Kavin,Transport,167.1,2026-02-14,Fuel,2026-02
+398,4,Meena,Utilities,1151.87,2026-02-14,Electricity bill,2026-02
+399,4,Meena,Transport,130.27,2026-02-14,Auto fare,2026-02
+400,5,Rahul,Food,444.73,2026-02-14,Breakfast,2026-02
+401,5,Rahul,Food,180.22,2026-02-14,Lunch,2026-02
+402,7,Suresh,Transport,251.44,2026-02-14,Cab ride,2026-02
+403,8,Anitha,Food,124.52,2026-02-14,Breakfast,2026-02
+404,8,Anitha,Entertainment,571.71,2026-02-14,OTT subscription,2026-02
+405,1,Arun,Utilities,1494.5,2026-02-15,Electricity bill,2026-02
+406,2,Priya,Food,394.68,2026-02-15,Breakfast,2026-02
+407,2,Priya,Food,308.11,2026-02-15,Lunch,2026-02
+408,2,Priya,Transport,298.87,2026-02-15,Cab ride,2026-02
+409,4,Meena,Education,1156.01,2026-02-15,Unknown,2026-02
+410,5,Rahul,Transport,106.17,2026-02-15,Fuel,2026-02
+411,6,Divya,Food,437.09,2026-02-15,Groceries,2026-02
+412,6,Divya,Food,211.85,2026-02-15,Dinner,2026-02
+413,6,Divya,Transport,282.29,2026-02-15,Metro card recharge,2026-02
+414,7,Suresh,Transport,220.47,2026-02-15,Cab ride,2026-02
+415,8,Anitha,Food,203.9,2026-02-15,Breakfast,2026-02
+416,8,Anitha,Transport,199.18,2026-02-15,Bus pass top-up,2026-02
+417,1,Arun,Food,413.56,2026-02-16,Restaurant,2026-02
+418,2,Priya,Food,380.8,2026-02-16,Breakfast,2026-02
+419,2,Priya,Food,272.57,2026-02-16,Breakfast,2026-02
+420,5,Rahul,Entertainment,818.92,2026-02-16,Unknown,2026-02
+421,5,Rahul,Entertainment,328.29,2026-02-16,Concert,2026-02
+422,7,Suresh,Shopping,1717.79,2026-02-16,Shoes,2026-02
+423,8,Anitha,Food,473.98,2026-02-16,Breakfast,2026-02
+424,1,Arun,Shopping,926.48,2026-02-17,Shoes,2026-02
+425,3,Kavin,Entertainment,337.79,2026-02-17,Movie tickets,2026-02
+426,4,Meena,Transport,152.17,2026-02-17,Bus pass top-up,2026-02
+427,5,Rahul,Transport,113.68,2026-02-17,Bus pass top-up,2026-02
+428,6,Divya,Food,108.73,2026-02-17,Snacks,2026-02
+429,7,Suresh,Food,402.43,2026-02-17,Coffee,2026-02
+430,7,Suresh,Food,496.5,2026-02-17,Restaurant,2026-02
+431,8,Anitha,Food,350.71,2026-02-17,Coffee,2026-02
+432,8,Anitha,Food,147.61,2026-02-17,Lunch,2026-02
+433,1,Arun,Entertainment,222.8,2026-02-18,Gaming,2026-02
+434,2,Priya,Food,244.26,2026-02-18,Restaurant,2026-02
+435,3,Kavin,Food,332.4,2026-02-18,Dinner,2026-02
+436,3,Kavin,Entertainment,1153.0,2026-02-18,Weekend outing,2026-02
+437,4,Meena,Food,148.79,2026-02-18,Lunch,2026-02
+438,5,Rahul,Food,376.16,2026-02-18,Groceries,2026-02
+439,8,Anitha,Transport,288.97,2026-02-18,Auto fare,2026-02
+440,8,Anitha,Entertainment,986.94,2026-02-18,Movie tickets,2026-02
+441,1,Arun,Food,262.55,2026-02-19,Dinner,2026-02
+442,2,Priya,Food,360.97,2026-02-19,Snacks,2026-02
+443,2,Priya,Transport,141.23,2026-02-19,Auto fare,2026-02
+444,6,Divya,Food,146.36,2026-02-19,Dinner,2026-02
+445,1,Arun,Shopping,29390.69,2026-02-20,Laptop purchase,2026-02
+446,2,Priya,Transport,143.07,2026-02-20,Cab ride,2026-02
+447,2,Priya,Transport,200.21,2026-02-20,Auto fare,2026-02
+448,2,Priya,Transport,259.08,2026-02-20,Auto fare,2026-02
+449,6,Divya,Food,118.95,2026-02-20,Breakfast,2026-02
+450,8,Anitha,Food,374.74,2026-02-20,Snacks,2026-02
+451,8,Anitha,Shopping,2107.92,2026-02-20,Phone accessories,2026-02
+452,8,Anitha,Entertainment,24846.73,2026-02-20,Unknown,2026-02
+453,1,Arun,Food,284.75,2026-02-21,Coffee,2026-02
+454,2,Priya,Food,105.87,2026-02-21,Breakfast,2026-02
+455,3,Kavin,Food,451.35,2026-02-21,Snacks,2026-02
+456,3,Kavin,Food,392.45,2026-02-21,Breakfast,2026-02
+457,3,Kavin,Food,109.26,2026-02-21,Lunch,2026-02
+458,3,Kavin,Food,455.03,2026-02-21,Snacks,2026-02
+459,6,Divya,Transport,245.71,2026-02-21,Auto fare,2026-02
+460,7,Suresh,Food,128.74,2026-02-21,Coffee,2026-02
+461,7,Suresh,Transport,132.45,2026-02-21,Bus pass top-up,2026-02
+462,8,Anitha,Food,173.52,2026-02-21,Restaurant,2026-02
+463,1,Arun,Food,386.76,2026-02-22,Coffee,2026-02
+464,1,Arun,Transport,60.4,2026-02-22,Fuel,2026-02
+465,2,Priya,Transport,226.35,2026-02-22,Metro card recharge,2026-02
+466,2,Priya,Transport,210.22,2026-02-22,Bus pass top-up,2026-02
+467,2,Priya,Transport,90.94,2026-02-22,Fuel,2026-02
+468,3,Kavin,Food,327.97,2026-02-22,Breakfast,2026-02
+469,3,Kavin,Food,452.41,2026-02-22,Dinner,2026-02
+470,5,Rahul,Food,139.12,2026-02-22,Dinner,2026-02
+471,6,Divya,Transport,155.32,2026-02-22,Bus pass top-up,2026-02
+472,7,Suresh,Entertainment,397.98,2026-02-22,Movie tickets,2026-02
+473,8,Anitha,Food,499.29,2026-02-22,Groceries,2026-02
+474,8,Anitha,Transport,219.79,2026-02-22,Bus pass top-up,2026-02
+475,1,Arun,Food,166.79,2026-02-23,Dinner,2026-02
+476,1,Arun,Transport,94.19,2026-02-23,Fuel,2026-02
+477,2,Priya,Food,225.78,2026-02-23,Breakfast,2026-02
+478,3,Kavin,Education,1656.86,2026-02-23,Workshop fee,2026-02
+479,4,Meena,Food,310.42,2026-02-23,Lunch,2026-02
+480,4,Meena,Transport,196.19,2026-02-23,Bus pass top-up,2026-02
+481,4,Meena,Transport,197.33,2026-02-23,Cab ride,2026-02
+482,5,Rahul,Food,135.62,2026-02-23,Groceries,2026-02
+483,5,Rahul,Transport,245.73,2026-02-23,Metro card recharge,2026-02
+484,1,Arun,Food,193.58,2026-02-24,Coffee,2026-02
+485,2,Priya,Food,297.66,2026-02-24,Groceries,2026-02
+486,2,Priya,Food,122.23,2026-02-24,Groceries,2026-02
+487,2,Priya,Shopping,2975.8,2026-02-24,Home supplies,2026-02
+488,4,Meena,Food,401.71,2026-02-24,Groceries,2026-02
+489,5,Rahul,Shopping,2620.95,2026-02-24,Clothes,2026-02
+490,6,Divya,Transport,55.57,2026-02-24,Cab ride,2026-02
+491,7,Suresh,Food,195.01,2026-02-24,Breakfast,2026-02
+492,8,Anitha,Transport,234.09,2026-02-24,Cab ride,2026-02
+493,2,Priya,Food,468.42,2026-02-25,Coffee,2026-02
+494,3,Kavin,Food,419.24,2026-02-25,Breakfast,2026-02
+495,3,Kavin,Transport,113.11,2026-02-25,Auto fare,2026-02
+496,3,Kavin,Shopping,2754.1,2026-02-25,Clothes,2026-02
+497,6,Divya,Food,295.71,2026-02-25,Lunch,2026-02
+498,7,Suresh,Food,340.85,2026-02-25,Unknown,2026-02
+499,1,Arun,Food,379.88,2026-02-26,Breakfast,2026-02
+500,4,Meena,Transport,294.66,2026-02-26,Auto fare,2026-02
+501,5,Rahul,Food,421.09,2026-02-26,Snacks,2026-02
+502,6,Divya,Transport,246.89,2026-02-26,Bus pass top-up,2026-02
+503,3,Kavin,Food,287.06,2026-02-27,Groceries,2026-02
+504,3,Kavin,Entertainment,752.9,2026-02-27,OTT subscription,2026-02
+505,4,Meena,Food,139.93,2026-02-27,Coffee,2026-02
+506,4,Meena,Food,330.74,2026-02-27,Restaurant,2026-02
+507,1,Arun,Entertainment,546.87,2026-02-28,Gaming,2026-02
+508,2,Priya,Shopping,1889.92,2026-02-28,Shoes,2026-02
+509,3,Kavin,Food,250.86,2026-02-28,Coffee,2026-02
+510,4,Meena,Food,117.67,2026-02-28,Lunch,2026-02
+511,5,Rahul,Food,264.74,2026-02-28,Snacks,2026-02
+512,6,Divya,Transport,240.96,2026-02-28,Metro card recharge,2026-02
+513,6,Divya,Transport,60.59,2026-02-28,Cab ride,2026-02
+514,6,Divya,Shopping,540.58,2026-02-28,Clothes,2026-02
+515,7,Suresh,Food,117.95,2026-02-28,Unknown,2026-02
+516,7,Suresh,Shopping,1542.28,2026-02-28,Clothes,2026-02
+517,8,Anitha,Food,438.64,2026-02-28,Groceries,2026-02
+518,8,Anitha,Transport,234.77,2026-02-28,Cab ride,2026-02
+519,1,Arun,Rent,6700.0,2026-03-01,Monthly rent,2026-03
+520,2,Priya,Food,466.94,2026-03-01,Dinner,2026-03
+521,2,Priya,Food,176.64,2026-03-01,Dinner,2026-03
+522,2,Priya,Transport,281.87,2026-03-01,Metro card recharge,2026-03
+523,3,Kavin,Food,182.73,2026-03-01,Coffee,2026-03
+524,5,Rahul,Transport,105.04,2026-03-01,Cab ride,2026-03
+525,5,Rahul,Transport,149.11,2026-03-01,Fuel,2026-03
+526,6,Divya,Rent,12900.0,2026-03-01,Monthly rent,2026-03
+527,6,Divya,Food,300.97,2026-03-01,Restaurant,2026-03
+528,7,Suresh,Food,315.78,2026-03-01,Lunch,2026-03
+529,7,Suresh,Food,140.48,2026-03-01,Snacks,2026-03
+530,8,Anitha,Food,265.77,2026-03-01,Breakfast,2026-03
+531,8,Anitha,Transport,90.47,2026-03-01,Auto fare,2026-03
+532,3,Kavin,Food,198.1,2026-03-02,Breakfast,2026-03
+533,3,Kavin,Food,455.2,2026-03-02,Restaurant,2026-03
+534,6,Divya,Food,269.46,2026-03-02,Groceries,2026-03
+535,7,Suresh,Food,387.34,2026-03-02,Coffee,2026-03
+536,7,Suresh,Food,365.74,2026-03-02,Snacks,2026-03
+537,7,Suresh,Food,261.71,2026-03-02,Groceries,2026-03
+538,1,Arun,Shopping,883.21,2026-03-03,Phone accessories,2026-03
+539,3,Kavin,Rent,11300.0,2026-03-03,Monthly rent,2026-03
+540,4,Meena,Food,397.38,2026-03-03,Groceries,2026-03
+541,8,Anitha,Rent,11600.0,2026-03-03,Monthly rent,2026-03
+542,8,Anitha,Transport,187.42,2026-03-03,Bus pass top-up,2026-03
+543,1,Arun,Food,363.77,2026-03-04,Lunch,2026-03
+544,4,Meena,Food,121.03,2026-03-04,Snacks,2026-03
+545,4,Meena,Food,331.59,2026-03-04,Restaurant,2026-03
+546,4,Meena,Transport,248.69,2026-03-04,Bus pass top-up,2026-03
+547,6,Divya,Food,328.78,2026-03-04,Coffee,2026-03
+548,7,Suresh,Food,376.74,2026-03-04,Groceries,2026-03
+549,7,Suresh,Food,310.96,2026-03-04,Lunch,2026-03
+550,8,Anitha,Transport,86.64,2026-03-04,Cab ride,2026-03
+551,1,Arun,Utilities,1627.32,2026-03-05,Water bill,2026-03
+552,1,Arun,Food,248.37,2026-03-05,Breakfast,2026-03
+553,1,Arun,Education,805.24,2026-03-05,Textbooks,2026-03
+554,2,Priya,Rent,12200.0,2026-03-05,Monthly rent,2026-03
+555,2,Priya,Utilities,1195.85,2026-03-05,Unknown,2026-03
+556,3,Kavin,Transport,81.42,2026-03-05,Auto fare,2026-03
+557,4,Meena,Rent,9500.0,2026-03-05,Monthly rent,2026-03
+558,4,Meena,Food,298.57,2026-03-05,Coffee,2026-03
+559,4,Meena,Food,314.6,2026-03-05,Breakfast,2026-03
+560,5,Rahul,Rent,9500.0,2026-03-05,Monthly rent,2026-03
+561,5,Rahul,Food,215.14,2026-03-05,Coffee,2026-03
+562,6,Divya,Transport,251.74,2026-03-05,Cab ride,2026-03
+563,7,Suresh,Rent,6600.0,2026-03-05,Monthly rent,2026-03
+564,8,Anitha,Entertainment,1197.07,2026-03-05,Unknown,2026-03
+565,1,Arun,Food,117.96,2026-03-06,Lunch,2026-03
+566,6,Divya,Utilities,887.93,2026-03-06,Water bill,2026-03
+567,6,Divya,Food,211.79,2026-03-06,Breakfast,2026-03
+568,6,Divya,Transport,179.79,2026-03-06,Cab ride,2026-03
+569,7,Suresh,Utilities,2330.47,2026-03-06,Mobile recharge,2026-03
+570,7,Suresh,Food,416.1,2026-03-06,Snacks,2026-03
+571,2,Priya,Food,334.58,2026-03-07,Breakfast,2026-03
+572,4,Meena,Utilities,1756.54,2026-03-07,Mobile recharge,2026-03
+573,4,Meena,Food,102.19,2026-03-07,Breakfast,2026-03
+574,5,Rahul,Food,264.95,2026-03-07,Groceries,2026-03
+575,5,Rahul,Shopping,2714.26,2026-03-07,Home supplies,2026-03
+576,6,Divya,Food,256.74,2026-03-07,Groceries,2026-03
+577,7,Suresh,Transport,233.5,2026-03-07,Cab ride,2026-03
+578,8,Anitha,Food,348.58,2026-03-07,Groceries,2026-03
+579,8,Anitha,Transport,118.64,2026-03-07,Auto fare,2026-03
+580,8,Anitha,Transport,56.06,2026-03-07,Fuel,2026-03
+581,3,Kavin,Food,140.16,2026-03-08,Restaurant,2026-03
+582,4,Meena,Food,485.43,2026-03-08,Restaurant,2026-03
+583,5,Rahul,Entertainment,227.18,2026-03-08,OTT subscription,2026-03
+584,6,Divya,Food,220.56,2026-03-08,Lunch,2026-03
+585,7,Suresh,Entertainment,305.75,2026-03-08,OTT subscription,2026-03
+586,2,Priya,Food,437.44,2026-03-09,Lunch,2026-03
+587,2,Priya,Transport,225.76,2026-03-09,Fuel,2026-03
+588,2,Priya,Shopping,2455.01,2026-03-09,Phone accessories,2026-03
+589,5,Rahul,Utilities,2290.35,2026-03-09,Electricity bill,2026-03
+590,5,Rahul,Food,309.24,2026-03-09,Snacks,2026-03
+591,6,Divya,Food,460.04,2026-03-09,Lunch,2026-03
+592,6,Divya,Entertainment,392.94,2026-03-09,Weekend outing,2026-03
+593,8,Anitha,Utilities,1217.11,2026-03-09,Mobile recharge,2026-03
+594,8,Anitha,Food,426.02,2026-03-09,Breakfast,2026-03
+595,8,Anitha,Food,364.35,2026-03-09,Restaurant,2026-03
+596,1,Arun,Food,368.9,2026-03-10,Groceries,2026-03
+597,1,Arun,Food,466.4,2026-03-10,Groceries,2026-03
+598,1,Arun,Food,423.3,2026-03-10,Coffee,2026-03
+599,1,Arun,Entertainment,977.4,2026-03-10,OTT subscription,2026-03
+600,2,Priya,Food,440.11,2026-03-10,Snacks,2026-03
+601,3,Kavin,Utilities,1081.03,2026-03-10,Electricity bill,2026-03
+602,4,Meena,Transport,268.58,2026-03-10,Auto fare,2026-03
+603,5,Rahul,Food,302.11,2026-03-10,Breakfast,2026-03
+604,5,Rahul,Transport,242.55,2026-03-10,Bus pass top-up,2026-03
+605,5,Rahul,Shopping,1828.23,2026-03-10,Shoes,2026-03
+606,3,Kavin,Food,164.5,2026-03-11,Lunch,2026-03
+607,5,Rahul,Transport,201.59,2026-03-11,Bus pass top-up,2026-03
+608,5,Rahul,Transport,266.28,2026-03-11,Unknown,2026-03
+609,6,Divya,Food,490.61,2026-03-11,Breakfast,2026-03
+610,6,Divya,Shopping,582.02,2026-03-11,Shoes,2026-03
+611,6,Divya,Education,497.41,2026-03-11,Exam registration,2026-03
+612,7,Suresh,Food,328.63,2026-03-11,Breakfast,2026-03
+613,7,Suresh,Food,388.09,2026-03-11,Unknown,2026-03
+614,7,Suresh,Food,336.91,2026-03-11,Groceries,2026-03
+615,7,Suresh,Entertainment,1015.73,2026-03-11,Weekend outing,2026-03
+616,8,Anitha,Transport,187.1,2026-03-11,Bus pass top-up,2026-03
+617,1,Arun,Food,458.46,2026-03-12,Coffee,2026-03
+618,1,Arun,Transport,73.62,2026-03-12,Metro card recharge,2026-03
+619,2,Priya,Food,463.82,2026-03-12,Breakfast,2026-03
+620,2,Priya,Food,299.53,2026-03-12,Dinner,2026-03
+621,3,Kavin,Food,394.05,2026-03-12,Snacks,2026-03
+622,3,Kavin,Food,438.59,2026-03-12,Lunch,2026-03
+623,4,Meena,Transport,154.4,2026-03-12,Auto fare,2026-03
+624,6,Divya,Food,242.09,2026-03-12,Lunch,2026-03
+625,6,Divya,Entertainment,585.17,2026-03-12,Weekend outing,2026-03
+626,7,Suresh,Food,164.16,2026-03-12,Restaurant,2026-03
+627,7,Suresh,Transport,62.59,2026-03-12,Unknown,2026-03
+628,7,Suresh,Shopping,1433.46,2026-03-12,Clothes,2026-03
+629,8,Anitha,Food,193.02,2026-03-12,Snacks,2026-03
+630,8,Anitha,Entertainment,1131.24,2026-03-12,OTT subscription,2026-03
+631,2,Priya,Food,405.16,2026-03-13,Snacks,2026-03
+632,5,Rahul,Food,355.29,2026-03-13,Dinner,2026-03
+633,6,Divya,Food,255.96,2026-03-13,Coffee,2026-03
+634,6,Divya,Food,386.7,2026-03-13,Dinner,2026-03
+635,7,Suresh,Food,402.45,2026-03-13,Unknown,2026-03
+636,8,Anitha,Food,403.21,2026-03-13,Dinner,2026-03
+637,8,Anitha,Transport,182.26,2026-03-13,Fuel,2026-03
+638,8,Anitha,Shopping,1010.03,2026-03-13,Phone accessories,2026-03
+639,1,Arun,Food,328.69,2026-03-14,Restaurant,2026-03
+640,1,Arun,Transport,298.09,2026-03-14,Auto fare,2026-03
+641,2,Priya,Transport,126.88,2026-03-14,Auto fare,2026-03
+642,5,Rahul,Food,195.34,2026-03-14,Groceries,2026-03
+643,6,Divya,Food,115.59,2026-03-14,Dinner,2026-03
+644,7,Suresh,Transport,266.03,2026-03-14,Auto fare,2026-03
+645,8,Anitha,Food,147.39,2026-03-14,Lunch,2026-03
+646,2,Priya,Shopping,785.26,2026-03-15,Phone accessories,2026-03
+647,3,Kavin,Food,440.77,2026-03-15,Lunch,2026-03
+648,5,Rahul,Food,388.73,2026-03-15,Restaurant,2026-03
+649,6,Divya,Food,369.93,2026-03-15,Lunch,2026-03
+650,6,Divya,Food,244.52,2026-03-15,Breakfast,2026-03
+651,2,Priya,Shopping,1600.22,2026-03-16,Home supplies,2026-03
+652,3,Kavin,Transport,182.44,2026-03-16,Bus pass top-up,2026-03
+653,5,Rahul,Food,258.04,2026-03-16,Snacks,2026-03
+654,5,Rahul,Transport,63.8,2026-03-16,Fuel,2026-03
+655,1,Arun,Food,206.79,2026-03-17,Breakfast,2026-03
+656,1,Arun,Food,321.61,2026-03-17,Groceries,2026-03
+657,1,Arun,Transport,128.98,2026-03-17,Auto fare,2026-03
+658,2,Priya,Food,440.81,2026-03-17,Coffee,2026-03
+659,3,Kavin,Food,199.36,2026-03-17,Breakfast,2026-03
+660,3,Kavin,Transport,158.64,2026-03-17,Bus pass top-up,2026-03
+661,4,Meena,Food,430.72,2026-03-17,Lunch,2026-03
+662,5,Rahul,Food,253.11,2026-03-17,Coffee,2026-03
+663,5,Rahul,Shopping,2666.52,2026-03-17,Unknown,2026-03
+664,6,Divya,Transport,94.48,2026-03-17,Unknown,2026-03
+665,8,Anitha,Food,265.94,2026-03-17,Groceries,2026-03
+666,2,Priya,Entertainment,854.1,2026-03-18,Gaming,2026-03
+667,3,Kavin,Food,235.73,2026-03-18,Restaurant,2026-03
+668,4,Meena,Food,232.29,2026-03-18,Coffee,2026-03
+669,4,Meena,Food,140.44,2026-03-18,Dinner,2026-03
+670,4,Meena,Transport,295.54,2026-03-18,Metro card recharge,2026-03
+671,6,Divya,Food,372.01,2026-03-18,Lunch,2026-03
+672,6,Divya,Food,149.58,2026-03-18,Breakfast,2026-03
+673,2,Priya,Transport,51.83,2026-03-19,Fuel,2026-03
+674,3,Kavin,Food,148.26,2026-03-19,Restaurant,2026-03
+675,4,Meena,Transport,156.24,2026-03-19,Cab ride,2026-03
+676,5,Rahul,Food,453.41,2026-03-19,Restaurant,2026-03
+677,6,Divya,Shopping,598.9,2026-03-19,Shoes,2026-03
+678,7,Suresh,Transport,134.65,2026-03-19,Metro card recharge,2026-03
+679,8,Anitha,Food,407.0,2026-03-19,Groceries,2026-03
+680,8,Anitha,Transport,296.67,2026-03-19,Metro card recharge,2026-03
+681,1,Arun,Food,306.02,2026-03-20,Dinner,2026-03
+682,2,Priya,Food,246.64,2026-03-20,Groceries,2026-03
+683,2,Priya,Food,171.0,2026-03-20,Snacks,2026-03
+684,2,Priya,Transport,295.45,2026-03-20,Cab ride,2026-03
+685,2,Priya,Transport,169.38,2026-03-20,Cab ride,2026-03
+686,3,Kavin,Food,265.43,2026-03-20,Lunch,2026-03
+687,4,Meena,Education,1315.8,2026-03-20,Workshop fee,2026-03
+688,5,Rahul,Food,213.62,2026-03-20,Restaurant,2026-03
+689,6,Divya,Transport,53.53,2026-03-20,Auto fare,2026-03
+690,8,Anitha,Entertainment,620.08,2026-03-20,Movie tickets,2026-03
+691,3,Kavin,Shopping,24614.19,2026-03-21,Smartphone,2026-03
+692,4,Meena,Food,256.99,2026-03-21,Restaurant,2026-03
+693,4,Meena,Food,409.96,2026-03-21,Lunch,2026-03
+694,4,Meena,Entertainment,576.73,2026-03-21,Concert,2026-03
+695,5,Rahul,Food,494.65,2026-03-21,Breakfast,2026-03
+696,5,Rahul,Transport,257.4,2026-03-21,Cab ride,2026-03
+697,8,Anitha,Food,472.28,2026-03-21,Breakfast,2026-03
+698,4,Meena,Entertainment,363.39,2026-03-22,Concert,2026-03
+699,8,Anitha,Food,227.09,2026-03-22,Breakfast,2026-03
+700,1,Arun,Food,407.46,2026-03-23,Coffee,2026-03
+701,2,Priya,Food,133.65,2026-03-23,Breakfast,2026-03
+702,3,Kavin,Food,248.5,2026-03-23,Dinner,2026-03
+703,5,Rahul,Transport,190.88,2026-03-23,Metro card recharge,2026-03
+704,6,Divya,Transport,228.4,2026-03-23,Metro card recharge,2026-03
+705,7,Suresh,Transport,179.94,2026-03-23,Bus pass top-up,2026-03
+706,8,Anitha,Food,252.09,2026-03-23,Dinner,2026-03
+707,1,Arun,Transport,215.42,2026-03-24,Fuel,2026-03
+708,1,Arun,Transport,115.62,2026-03-24,Auto fare,2026-03
+709,1,Arun,Shopping,1998.46,2026-03-24,Clothes,2026-03
+710,2,Priya,Food,235.38,2026-03-24,Breakfast,2026-03
+711,2,Priya,Transport,275.83,2026-03-24,Fuel,2026-03
+712,6,Divya,Shopping,19526.9,2026-03-24,Television,2026-03
+713,3,Kavin,Transport,179.42,2026-03-25,Bus pass top-up,2026-03
+714,4,Meena,Food,175.04,2026-03-25,Coffee,2026-03
+715,5,Rahul,Food,394.61,2026-03-25,Lunch,2026-03
+716,5,Rahul,Food,418.09,2026-03-25,Lunch,2026-03
+717,5,Rahul,Entertainment,445.7,2026-03-25,Concert,2026-03
+718,7,Suresh,Food,315.0,2026-03-25,Snacks,2026-03
+719,3,Kavin,Food,404.01,2026-03-26,Dinner,2026-03
+720,4,Meena,Transport,170.44,2026-03-26,Bus pass top-up,2026-03
+721,4,Meena,Transport,121.1,2026-03-26,Metro card recharge,2026-03
+722,5,Rahul,Food,465.26,2026-03-26,Coffee,2026-03
+723,5,Rahul,Food,493.67,2026-03-26,Restaurant,2026-03
+724,7,Suresh,Transport,198.36,2026-03-26,Cab ride,2026-03
+725,8,Anitha,Food,264.18,2026-03-26,Groceries,2026-03
+726,1,Arun,Food,108.64,2026-03-27,Breakfast,2026-03
+727,2,Priya,Food,359.66,2026-03-27,Snacks,2026-03
+728,2,Priya,Food,141.99,2026-03-27,Breakfast,2026-03
+729,4,Meena,Food,208.14,2026-03-27,Breakfast,2026-03
+730,7,Suresh,Food,402.94,2026-03-27,Snacks,2026-03
+731,7,Suresh,Food,334.08,2026-03-27,Snacks,2026-03
+732,1,Arun,Transport,237.15,2026-03-28,Cab ride,2026-03
+733,1,Arun,Transport,273.36,2026-03-28,Auto fare,2026-03
+734,1,Arun,Entertainment,396.43,2026-03-28,OTT subscription,2026-03
+735,3,Kavin,Food,440.53,2026-03-28,Snacks,2026-03
+736,3,Kavin,Shopping,797.38,2026-03-28,Clothes,2026-03
+737,4,Meena,Food,249.22,2026-03-28,Restaurant,2026-03
+738,6,Divya,Food,443.81,2026-03-28,Breakfast,2026-03
+739,7,Suresh,Food,228.99,2026-03-28,Snacks,2026-03
+740,8,Anitha,Food,108.1,2026-03-28,Breakfast,2026-03
+741,1,Arun,Food,474.42,2026-03-29,Lunch,2026-03
+742,2,Priya,Food,293.03,2026-03-29,Coffee,2026-03
+743,3,Kavin,Entertainment,521.53,2026-03-29,Weekend outing,2026-03
+744,4,Meena,Food,451.26,2026-03-29,Snacks,2026-03
+745,7,Suresh,Food,482.79,2026-03-29,Unknown,2026-03
+746,1,Arun,Food,308.27,2026-03-30,Unknown,2026-03
+747,1,Arun,Food,481.16,2026-03-30,Dinner,2026-03
+748,1,Arun,Shopping,806.89,2026-03-30,Shoes,2026-03
+749,3,Kavin,Transport,170.51,2026-03-30,Cab ride,2026-03
+750,3,Kavin,Transport,90.89,2026-03-30,Bus pass top-up,2026-03
+751,3,Kavin,Shopping,1132.96,2026-03-30,Shoes,2026-03
+752,4,Meena,Food,325.07,2026-03-30,Snacks,2026-03
+753,4,Meena,Shopping,1659.19,2026-03-30,Headphones,2026-03
+754,5,Rahul,Transport,62.72,2026-03-30,Bus pass top-up,2026-03
+755,6,Divya,Food,398.84,2026-03-30,Lunch,2026-03
+756,6,Divya,Transport,201.63,2026-03-30,Auto fare,2026-03
+757,6,Divya,Shopping,1100.62,2026-03-30,Clothes,2026-03
+758,7,Suresh,Entertainment,705.15,2026-03-30,Weekend outing,2026-03
+759,8,Anitha,Food,399.12,2026-03-30,Breakfast,2026-03
+760,8,Anitha,Transport,77.08,2026-03-30,Unknown,2026-03
+761,1,Arun,Food,114.97,2026-03-31,Lunch,2026-03
+762,1,Arun,Entertainment,700.74,2026-03-31,Gaming,2026-03
+763,2,Priya,Entertainment,1184.58,2026-03-31,Movie tickets,2026-03
+764,4,Meena,Food,338.96,2026-03-31,Restaurant,2026-03
+765,4,Meena,Food,115.42,2026-03-31,Groceries,2026-03
+766,5,Rahul,Food,428.2,2026-03-31,Coffee,2026-03
+767,6,Divya,Food,301.63,2026-03-31,Lunch,2026-03
+768,6,Divya,Food,203.53,2026-03-31,Restaurant,2026-03
+769,6,Divya,Transport,135.38,2026-03-31,Fuel,2026-03
+770,7,Suresh,Food,371.62,2026-03-31,Restaurant,2026-03
+771,8,Anitha,Transport,204.42,2026-03-31,Metro card recharge,2026-03
+772,1,Arun,Rent,6700.0,2026-04-01,Monthly rent,2026-04
+773,3,Kavin,Food,497.35,2026-04-01,Lunch,2026-04
+774,6,Divya,Rent,12900.0,2026-04-01,Monthly rent,2026-04
+775,2,Priya,Rent,12200.0,2026-04-02,Monthly rent,2026-04
+776,2,Priya,Food,249.08,2026-04-02,Restaurant,2026-04
+777,2,Priya,Food,143.71,2026-04-02,Restaurant,2026-04
+778,2,Priya,Food,193.81,2026-04-02,Groceries,2026-04
+779,3,Kavin,Food,236.96,2026-04-02,Groceries,2026-04
+780,6,Divya,Transport,137.98,2026-04-02,Auto fare,2026-04
+781,7,Suresh,Rent,6600.0,2026-04-02,Monthly rent,2026-04
+782,7,Suresh,Food,476.14,2026-04-02,Snacks,2026-04
+783,7,Suresh,Transport,196.4,2026-04-02,Cab ride,2026-04
+784,7,Suresh,Transport,93.23,2026-04-02,Cab ride,2026-04
+785,8,Anitha,Rent,11600.0,2026-04-02,Monthly rent,2026-04
+786,8,Anitha,Food,383.54,2026-04-02,Coffee,2026-04
+787,8,Anitha,Food,335.92,2026-04-02,Lunch,2026-04
+788,3,Kavin,Transport,261.5,2026-04-03,Unknown,2026-04
+789,4,Meena,Rent,9500.0,2026-04-03,Monthly rent,2026-04
+790,4,Meena,Food,478.93,2026-04-03,Lunch,2026-04
+791,5,Rahul,Food,148.04,2026-04-03,Dinner,2026-04
+792,5,Rahul,Food,495.93,2026-04-03,Groceries,2026-04
+793,5,Rahul,Food,153.02,2026-04-03,Breakfast,2026-04
+794,5,Rahul,Shopping,1617.1,2026-04-03,Clothes,2026-04
+795,6,Divya,Food,497.71,2026-04-03,Unknown,2026-04
+796,6,Divya,Food,210.37,2026-04-03,Restaurant,2026-04
+797,7,Suresh,Food,193.09,2026-04-03,Dinner,2026-04
+798,8,Anitha,Transport,86.99,2026-04-03,Metro card recharge,2026-04
+799,1,Arun,Food,471.03,2026-04-04,Groceries,2026-04
+800,1,Arun,Food,156.14,2026-04-04,Coffee,2026-04
+801,1,Arun,Food,431.77,2026-04-04,Lunch,2026-04
+802,1,Arun,Transport,156.47,2026-04-04,Bus pass top-up,2026-04
+803,1,Arun,Transport,266.87,2026-04-04,Metro card recharge,2026-04
+804,2,Priya,Food,116.38,2026-04-04,Breakfast,2026-04
+805,3,Kavin,Rent,11300.0,2026-04-04,Monthly rent,2026-04
+806,4,Meena,Food,123.93,2026-04-04,Groceries,2026-04
+807,4,Meena,Transport,257.5,2026-04-04,Metro card recharge,2026-04
+808,4,Meena,Transport,260.54,2026-04-04,Cab ride,2026-04
+809,1,Arun,Utilities,1007.12,2026-04-05,Water bill,2026-04
+810,1,Arun,Shopping,2561.66,2026-04-05,Shoes,2026-04
+811,3,Kavin,Food,352.91,2026-04-05,Breakfast,2026-04
+812,5,Rahul,Rent,9500.0,2026-04-05,Monthly rent,2026-04
+813,5,Rahul,Food,198.54,2026-04-05,Coffee,2026-04
+814,6,Divya,Shopping,1816.15,2026-04-05,Unknown,2026-04
+815,6,Divya,Education,553.41,2026-04-05,Unknown,2026-04
+816,7,Suresh,Food,465.37,2026-04-05,Groceries,2026-04
+817,7,Suresh,Transport,143.82,2026-04-05,Fuel,2026-04
+818,8,Anitha,Food,369.66,2026-04-05,Snacks,2026-04
+819,8,Anitha,Entertainment,383.32,2026-04-05,Gaming,2026-04
+820,3,Kavin,Food,495.44,2026-04-06,Groceries,2026-04
+821,3,Kavin,Entertainment,542.36,2026-04-06,Concert,2026-04
+822,4,Meena,Food,237.66,2026-04-06,Lunch,2026-04
+823,4,Meena,Transport,266.83,2026-04-06,Auto fare,2026-04
+824,5,Rahul,Utilities,2064.79,2026-04-06,Water bill,2026-04
+825,5,Rahul,Food,184.71,2026-04-06,Groceries,2026-04
+826,7,Suresh,Transport,144.32,2026-04-06,Metro card recharge,2026-04
+827,8,Anitha,Transport,89.26,2026-04-06,Bus pass top-up,2026-04
+828,3,Kavin,Food,469.51,2026-04-07,Breakfast,2026-04
+829,5,Rahul,Food,455.22,2026-04-07,Coffee,2026-04
+830,6,Divya,Utilities,2086.3,2026-04-07,Electricity bill,2026-04
+831,6,Divya,Entertainment,784.16,2026-04-07,Weekend outing,2026-04
+832,7,Suresh,Food,427.78,2026-04-07,Snacks,2026-04
+833,7,Suresh,Food,319.45,2026-04-07,Restaurant,2026-04
+834,7,Suresh,Food,165.28,2026-04-07,Dinner,2026-04
+835,2,Priya,Transport,263.2,2026-04-08,Bus pass top-up,2026-04
+836,7,Suresh,Education,368.19,2026-04-08,Textbooks,2026-04
+837,8,Anitha,Utilities,897.92,2026-04-08,Mobile recharge,2026-04
+838,8,Anitha,Food,441.76,2026-04-08,Restaurant,2026-04
+839,8,Anitha,Food,104.47,2026-04-08,Lunch,2026-04
+840,1,Arun,Transport,111.96,2026-04-09,Fuel,2026-04
+841,1,Arun,Transport,236.5,2026-04-09,Bus pass top-up,2026-04
+842,3,Kavin,Food,124.83,2026-04-09,Dinner,2026-04
+843,3,Kavin,Transport,237.4,2026-04-09,Cab ride,2026-04
+844,3,Kavin,Transport,182.85,2026-04-09,Cab ride,2026-04
+845,4,Meena,Entertainment,591.51,2026-04-09,OTT subscription,2026-04
+846,1,Arun,Shopping,859.68,2026-04-10,Unknown,2026-04
+847,3,Kavin,Food,390.47,2026-04-10,Coffee,2026-04
+848,5,Rahul,Entertainment,942.91,2026-04-10,Gaming,2026-04
+849,6,Divya,Food,409.58,2026-04-10,Groceries,2026-04
+850,6,Divya,Food,471.7,2026-04-10,Breakfast,2026-04
+851,7,Suresh,Transport,177.43,2026-04-10,Auto fare,2026-04
+852,7,Suresh,Transport,159.25,2026-04-10,Fuel,2026-04
+853,7,Suresh,Shopping,1234.9,2026-04-10,Headphones,2026-04
+854,8,Anitha,Food,134.35,2026-04-10,Restaurant,2026-04
+855,3,Kavin,Transport,141.58,2026-04-11,Cab ride,2026-04
+856,4,Meena,Transport,81.73,2026-04-11,Unknown,2026-04
+857,5,Rahul,Transport,205.47,2026-04-11,Fuel,2026-04
+858,8,Anitha,Food,378.91,2026-04-11,Breakfast,2026-04
+859,8,Anitha,Entertainment,483.47,2026-04-11,OTT subscription,2026-04
+860,1,Arun,Food,220.38,2026-04-12,Groceries,2026-04
+861,2,Priya,Shopping,1187.06,2026-04-12,Headphones,2026-04
+862,3,Kavin,Food,468.74,2026-04-12,Snacks,2026-04
+863,6,Divya,Food,270.04,2026-04-12,Groceries,2026-04
+864,1,Arun,Food,486.49,2026-04-13,Lunch,2026-04
+865,4,Meena,Food,423.59,2026-04-13,Dinner,2026-04
+866,4,Meena,Food,114.36,2026-04-13,Lunch,2026-04
+867,5,Rahul,Shopping,716.78,2026-04-13,Phone accessories,2026-04
+868,6,Divya,Food,116.98,2026-04-13,Snacks,2026-04
+869,7,Suresh,Utilities,988.4,2026-04-13,Mobile recharge,2026-04
+870,7,Suresh,Food,120.38,2026-04-13,Restaurant,2026-04
+871,7,Suresh,Food,147.78,2026-04-13,Lunch,2026-04
+872,1,Arun,Transport,182.69,2026-04-14,Bus pass top-up,2026-04
+873,3,Kavin,Food,355.61,2026-04-14,Coffee,2026-04
+874,3,Kavin,Food,151.61,2026-04-14,Breakfast,2026-04
+875,3,Kavin,Food,363.98,2026-04-14,Snacks,2026-04
+876,4,Meena,Food,125.25,2026-04-14,Lunch,2026-04
+877,4,Meena,Entertainment,586.34,2026-04-14,Gaming,2026-04
+878,5,Rahul,Food,356.18,2026-04-14,Dinner,2026-04
+879,5,Rahul,Food,238.43,2026-04-14,Lunch,2026-04
+880,5,Rahul,Transport,205.89,2026-04-14,Metro card recharge,2026-04
+881,6,Divya,Food,206.09,2026-04-14,Restaurant,2026-04
+882,8,Anitha,Food,161.99,2026-04-14,Coffee,2026-04
+883,1,Arun,Food,365.15,2026-04-15,Dinner,2026-04
+884,2,Priya,Utilities,1389.04,2026-04-15,Water bill,2026-04
+885,3,Kavin,Utilities,1704.21,2026-04-15,Internet bill,2026-04
+886,3,Kavin,Food,161.15,2026-04-15,Coffee,2026-04
+887,4,Meena,Utilities,1037.36,2026-04-15,Electricity bill,2026-04
+888,5,Rahul,Food,167.89,2026-04-15,Dinner,2026-04
+889,6,Divya,Transport,175.67,2026-04-15,Bus pass top-up,2026-04
+890,6,Divya,Transport,114.18,2026-04-15,Cab ride,2026-04
+891,6,Divya,Transport,259.53,2026-04-15,Unknown,2026-04
+892,7,Suresh,Food,113.55,2026-04-15,Snacks,2026-04
+893,8,Anitha,Transport,179.47,2026-04-15,Cab ride,2026-04
+894,1,Arun,Food,377.7,2026-04-16,Coffee,2026-04
+895,2,Priya,Transport,150.34,2026-04-16,Auto fare,2026-04
+896,2,Priya,Transport,263.34,2026-04-16,Bus pass top-up,2026-04
+897,3,Kavin,Shopping,2767.72,2026-04-16,Shoes,2026-04
+898,4,Meena,Transport,291.09,2026-04-16,Unknown,2026-04
+899,5,Rahul,Food,290.45,2026-04-16,Groceries,2026-04
+900,5,Rahul,Food,385.1,2026-04-16,Dinner,2026-04
+901,6,Divya,Food,312.73,2026-04-16,Restaurant,2026-04
+902,7,Suresh,Food,320.9,2026-04-16,Snacks,2026-04
+903,7,Suresh,Transport,54.12,2026-04-16,Metro card recharge,2026-04
+904,7,Suresh,Transport,112.46,2026-04-16,Bus pass top-up,2026-04
+905,8,Anitha,Transport,111.99,2026-04-16,Auto fare,2026-04
+906,1,Arun,Food,353.59,2026-04-17,Unknown,2026-04
+907,1,Arun,Entertainment,255.4,2026-04-17,Movie tickets,2026-04
+908,2,Priya,Food,420.82,2026-04-17,Lunch,2026-04
+909,3,Kavin,Shopping,2299.46,2026-04-17,Headphones,2026-04
+910,4,Meena,Food,497.42,2026-04-17,Breakfast,2026-04
+911,4,Meena,Food,466.3,2026-04-17,Restaurant,2026-04
+912,4,Meena,Shopping,2747.3,2026-04-17,Shoes,2026-04
+913,7,Suresh,Food,247.24,2026-04-17,Coffee,2026-04
+914,7,Suresh,Transport,209.8,2026-04-17,Metro card recharge,2026-04
+915,7,Suresh,Shopping,1748.2,2026-04-17,Clothes,2026-04
+916,7,Suresh,Entertainment,225.04,2026-04-17,Unknown,2026-04
+917,8,Anitha,Food,369.41,2026-04-17,Groceries,2026-04
+918,8,Anitha,Food,452.76,2026-04-17,Restaurant,2026-04
+919,8,Anitha,Transport,289.42,2026-04-17,Metro card recharge,2026-04
+920,1,Arun,Food,179.91,2026-04-18,Restaurant,2026-04
+921,1,Arun,Food,473.21,2026-04-18,Coffee,2026-04
+922,1,Arun,Entertainment,484.72,2026-04-18,Movie tickets,2026-04
+923,1,Arun,Entertainment,315.49,2026-04-18,Movie tickets,2026-04
+924,2,Priya,Education,25140.28,2026-04-18,Certification program,2026-04
+925,3,Kavin,Food,289.11,2026-04-18,Snacks,2026-04
+926,3,Kavin,Transport,162.41,2026-04-18,Auto fare,2026-04
+927,4,Meena,Food,258.89,2026-04-18,Coffee,2026-04
+928,5,Rahul,Food,156.41,2026-04-18,Lunch,2026-04
+929,8,Anitha,Food,183.05,2026-04-18,Restaurant,2026-04
+930,8,Anitha,Shopping,1142.88,2026-04-18,Phone accessories,2026-04
+931,2,Priya,Food,443.25,2026-04-19,Breakfast,2026-04
+932,5,Rahul,Transport,220.65,2026-04-19,Metro card recharge,2026-04
+933,6,Divya,Food,442.74,2026-04-19,Dinner,2026-04
+934,6,Divya,Transport,153.35,2026-04-19,Fuel,2026-04
+935,7,Suresh,Food,483.64,2026-04-19,Lunch,2026-04
+936,7,Suresh,Food,464.88,2026-04-19,Breakfast,2026-04
+937,4,Meena,Food,448.56,2026-04-20,Restaurant,2026-04
+938,4,Meena,Food,271.61,2026-04-20,Groceries,2026-04
+939,5,Rahul,Transport,69.44,2026-04-20,Cab ride,2026-04
+940,5,Rahul,Transport,123.75,2026-04-20,Unknown,2026-04
+941,6,Divya,Food,113.67,2026-04-20,Snacks,2026-04
+942,7,Suresh,Food,285.04,2026-04-20,Snacks,2026-04
+943,8,Anitha,Transport,88.39,2026-04-20,Cab ride,2026-04
+944,2,Priya,Food,385.3,2026-04-21,Snacks,2026-04
+945,2,Priya,Transport,217.9,2026-04-21,Cab ride,2026-04
+946,2,Priya,Entertainment,917.64,2026-04-21,OTT subscription,2026-04
+947,3,Kavin,Entertainment,640.05,2026-04-21,Unknown,2026-04
+948,6,Divya,Transport,246.18,2026-04-21,Cab ride,2026-04
+949,7,Suresh,Food,480.2,2026-04-21,Breakfast,2026-04
+950,8,Anitha,Food,335.26,2026-04-21,Breakfast,2026-04
+951,8,Anitha,Food,288.72,2026-04-21,Coffee,2026-04
+952,8,Anitha,Transport,249.32,2026-04-21,Cab ride,2026-04
+953,4,Meena,Food,220.71,2026-04-22,Breakfast,2026-04
+954,4,Meena,Education,2015.71,2026-04-22,Unknown,2026-04
+955,8,Anitha,Food,159.67,2026-04-22,Breakfast,2026-04
+956,1,Arun,Food,152.42,2026-04-23,Breakfast,2026-04
+957,1,Arun,Transport,266.93,2026-04-23,Unknown,2026-04
+958,1,Arun,Transport,153.14,2026-04-23,Metro card recharge,2026-04
+959,2,Priya,Food,420.35,2026-04-23,Dinner,2026-04
+960,3,Kavin,Food,417.45,2026-04-23,Coffee,2026-04
+961,3,Kavin,Transport,125.62,2026-04-23,Metro card recharge,2026-04
+962,3,Kavin,Shopping,1507.85,2026-04-23,Phone accessories,2026-04
+963,5,Rahul,Transport,222.23,2026-04-23,Bus pass top-up,2026-04
+964,6,Divya,Food,437.71,2026-04-23,Breakfast,2026-04
+965,6,Divya,Transport,154.44,2026-04-23,Fuel,2026-04
+966,7,Suresh,Entertainment,485.22,2026-04-23,Weekend outing,2026-04
+967,8,Anitha,Transport,131.1,2026-04-23,Fuel,2026-04
+968,1,Arun,Food,107.13,2026-04-24,Snacks,2026-04
+969,2,Priya,Food,295.88,2026-04-24,Restaurant,2026-04
+970,2,Priya,Food,133.93,2026-04-24,Lunch,2026-04
+971,2,Priya,Food,446.18,2026-04-24,Coffee,2026-04
+972,3,Kavin,Food,349.08,2026-04-24,Groceries,2026-04
+973,5,Rahul,Food,352.36,2026-04-24,Dinner,2026-04
+974,5,Rahul,Food,204.28,2026-04-24,Dinner,2026-04
+975,6,Divya,Food,422.56,2026-04-24,Coffee,2026-04
+976,6,Divya,Food,137.31,2026-04-24,Lunch,2026-04
+977,6,Divya,Food,419.69,2026-04-24,Coffee,2026-04
+978,1,Arun,Food,386.16,2026-04-25,Groceries,2026-04
+979,1,Arun,Food,286.95,2026-04-25,Snacks,2026-04
+980,1,Arun,Education,1600.52,2026-04-25,Online course fee,2026-04
+981,3,Kavin,Food,396.65,2026-04-25,Dinner,2026-04
+982,3,Kavin,Education,1768.48,2026-04-25,Online course fee,2026-04
+983,5,Rahul,Food,239.83,2026-04-25,Restaurant,2026-04
+984,5,Rahul,Food,332.1,2026-04-25,Groceries,2026-04
+985,7,Suresh,Food,210.88,2026-04-25,Coffee,2026-04
+986,1,Arun,Transport,76.32,2026-04-26,Cab ride,2026-04
+987,4,Meena,Food,162.3,2026-04-26,Coffee,2026-04
+988,5,Rahul,Food,232.08,2026-04-26,Restaurant,2026-04
+989,5,Rahul,Education,1500.76,2026-04-26,Workshop fee,2026-04
+990,7,Suresh,Food,158.33,2026-04-26,Groceries,2026-04
+991,8,Anitha,Transport,253.72,2026-04-26,Bus pass top-up,2026-04
+992,1,Arun,Transport,198.61,2026-04-27,Auto fare,2026-04
+993,2,Priya,Shopping,968.98,2026-04-27,Home supplies,2026-04
+994,5,Rahul,Food,355.39,2026-04-27,Breakfast,2026-04
+995,5,Rahul,Transport,126.92,2026-04-27,Metro card recharge,2026-04
+996,6,Divya,Food,273.74,2026-04-27,Groceries,2026-04
+997,6,Divya,Food,208.14,2026-04-27,Restaurant,2026-04
+998,6,Divya,Food,270.39,2026-04-27,Coffee,2026-04
+999,1,Arun,Food,109.94,2026-04-28,Snacks,2026-04
+1000,2,Priya,Food,429.03,2026-04-28,Lunch,2026-04
+1001,2,Priya,Transport,197.58,2026-04-28,Bus pass top-up,2026-04
+1002,3,Kavin,Food,236.55,2026-04-28,Breakfast,2026-04
+1003,4,Meena,Food,118.05,2026-04-28,Unknown,2026-04
+1004,4,Meena,Transport,186.42,2026-04-28,Metro card recharge,2026-04
+1005,5,Rahul,Food,232.87,2026-04-28,Coffee,2026-04
+1006,5,Rahul,Transport,223.39,2026-04-28,Auto fare,2026-04
+1007,7,Suresh,Food,453.47,2026-04-28,Unknown,2026-04
+1008,7,Suresh,Food,431.64,2026-04-28,Unknown,2026-04
+1009,8,Anitha,Food,327.12,2026-04-28,Snacks,2026-04
+1010,1,Arun,Food,214.58,2026-04-29,Restaurant,2026-04
+1011,2,Priya,Transport,219.32,2026-04-29,Fuel,2026-04
+1012,3,Kavin,Food,237.09,2026-04-29,Breakfast,2026-04
+1013,4,Meena,Food,116.16,2026-04-29,Lunch,2026-04
+1014,4,Meena,Food,434.99,2026-04-29,Restaurant,2026-04
+1015,7,Suresh,Food,312.97,2026-04-29,Coffee,2026-04
+1016,2,Priya,Food,285.99,2026-04-30,Dinner,2026-04
+1017,2,Priya,Food,264.63,2026-04-30,Groceries,2026-04
+1018,4,Meena,Food,132.29,2026-04-30,Snacks,2026-04
+1019,4,Meena,Food,224.26,2026-04-30,Coffee,2026-04
+1020,4,Meena,Shopping,2262.1,2026-04-30,Home supplies,2026-04
+1021,5,Rahul,Food,461.16,2026-04-30,Snacks,2026-04
+1022,5,Rahul,Transport,122.46,2026-04-30,Unknown,2026-04
+1023,6,Divya,Food,471.41,2026-04-30,Unknown,2026-04
+1024,8,Anitha,Food,102.99,2026-04-30,Restaurant,2026-04
+1025,8,Anitha,Transport,120.9,2026-04-30,Auto fare,2026-04
+1026,8,Anitha,Shopping,751.9,2026-04-30,Home supplies,2026-04
+1027,1,Arun,Food,309.5,2026-05-01,Dinner,2026-05
+1028,3,Kavin,Rent,11300.0,2026-05-01,Monthly rent,2026-05
+1029,4,Meena,Shopping,2741.89,2026-05-01,Unknown,2026-05
+1030,5,Rahul,Rent,9500.0,2026-05-01,Unknown,2026-05
+1031,6,Divya,Food,304.9,2026-05-01,Groceries,2026-05
+1032,8,Anitha,Rent,11600.0,2026-05-01,Unknown,2026-05
+1033,8,Anitha,Entertainment,384.31,2026-05-01,Gaming,2026-05
+1034,2,Priya,Entertainment,446.07,2026-05-02,Unknown,2026-05
+1035,4,Meena,Food,119.65,2026-05-02,Lunch,2026-05
+1036,6,Divya,Rent,12900.0,2026-05-02,Monthly rent,2026-05
+1037,6,Divya,Transport,213.43,2026-05-02,Auto fare,2026-05
+1038,1,Arun,Rent,6700.0,2026-05-03,Monthly rent,2026-05
+1039,2,Priya,Rent,12200.0,2026-05-03,Monthly rent,2026-05
+1040,2,Priya,Food,180.79,2026-05-03,Groceries,2026-05
+1041,4,Meena,Food,163.01,2026-05-03,Groceries,2026-05
+1042,5,Rahul,Food,471.19,2026-05-03,Snacks,2026-05
+1043,6,Divya,Transport,287.46,2026-05-03,Cab ride,2026-05
+1044,7,Suresh,Food,106.32,2026-05-03,Restaurant,2026-05
+1045,7,Suresh,Food,407.06,2026-05-03,Dinner,2026-05
+1046,8,Anitha,Food,409.77,2026-05-03,Groceries,2026-05
+1047,1,Arun,Food,469.94,2026-05-04,Groceries,2026-05
+1048,3,Kavin,Shopping,1641.13,2026-05-04,Headphones,2026-05
+1049,4,Meena,Rent,9500.0,2026-05-04,Monthly rent,2026-05
+1050,4,Meena,Food,136.23,2026-05-04,Dinner,2026-05
+1051,4,Meena,Transport,174.41,2026-05-04,Fuel,2026-05
+1052,5,Rahul,Food,306.27,2026-05-04,Groceries,2026-05
+1053,5,Rahul,Food,166.95,2026-05-04,Restaurant,2026-05
+1054,8,Anitha,Shopping,2044.46,2026-05-04,Home supplies,2026-05
+1055,1,Arun,Transport,169.47,2026-05-05,Unknown,2026-05
+1056,2,Priya,Transport,268.58,2026-05-05,Auto fare,2026-05
+1057,4,Meena,Food,327.43,2026-05-05,Lunch,2026-05
+1058,5,Rahul,Food,100.23,2026-05-05,Groceries,2026-05
+1059,6,Divya,Transport,130.04,2026-05-05,Cab ride,2026-05
+1060,7,Suresh,Rent,6600.0,2026-05-05,Monthly rent,2026-05
+1061,7,Suresh,Food,378.69,2026-05-05,Snacks,2026-05
+1062,7,Suresh,Food,110.41,2026-05-05,Restaurant,2026-05
+1063,7,Suresh,Transport,203.55,2026-05-05,Cab ride,2026-05
+1064,8,Anitha,Food,319.58,2026-05-05,Dinner,2026-05
+1065,2,Priya,Food,380.35,2026-05-06,Restaurant,2026-05
+1066,3,Kavin,Food,444.25,2026-05-06,Coffee,2026-05
+1067,3,Kavin,Food,210.06,2026-05-06,Groceries,2026-05
+1068,4,Meena,Food,369.14,2026-05-06,Snacks,2026-05
+1069,4,Meena,Food,191.46,2026-05-06,Breakfast,2026-05
+1070,8,Anitha,Food,211.29,2026-05-06,Snacks,2026-05
+1071,8,Anitha,Food,196.52,2026-05-06,Groceries,2026-05
+1072,5,Rahul,Food,161.71,2026-05-07,Breakfast,2026-05
+1073,5,Rahul,Shopping,1599.52,2026-05-07,Shoes,2026-05
+1074,6,Divya,Entertainment,461.9,2026-05-07,OTT subscription,2026-05
+1075,7,Suresh,Food,280.44,2026-05-07,Lunch,2026-05
+1076,8,Anitha,Food,384.0,2026-05-07,Snacks,2026-05
+1077,8,Anitha,Food,450.04,2026-05-07,Coffee,2026-05
+1078,1,Arun,Food,328.49,2026-05-08,Lunch,2026-05
+1079,5,Rahul,Food,300.08,2026-05-08,Restaurant,2026-05
+1080,5,Rahul,Shopping,17800.38,2026-05-08,Furniture,2026-05
+1081,6,Divya,Entertainment,585.92,2026-05-08,Movie tickets,2026-05
+1082,7,Suresh,Food,341.58,2026-05-08,Breakfast,2026-05
+1083,7,Suresh,Transport,216.51,2026-05-08,Auto fare,2026-05
+1084,2,Priya,Transport,190.37,2026-05-09,Bus pass top-up,2026-05
+1085,3,Kavin,Food,464.13,2026-05-09,Snacks,2026-05
+1086,3,Kavin,Entertainment,457.81,2026-05-09,Gaming,2026-05
+1087,4,Meena,Utilities,2382.16,2026-05-09,Mobile recharge,2026-05
+1088,4,Meena,Shopping,650.83,2026-05-09,Headphones,2026-05
+1089,5,Rahul,Food,192.27,2026-05-09,Coffee,2026-05
+1090,5,Rahul,Transport,112.61,2026-05-09,Metro card recharge,2026-05
+1091,5,Rahul,Transport,195.61,2026-05-09,Metro card recharge,2026-05
+1092,6,Divya,Food,174.39,2026-05-09,Restaurant,2026-05
+1093,6,Divya,Food,335.05,2026-05-09,Dinner,2026-05
+1094,7,Suresh,Food,130.7,2026-05-09,Coffee,2026-05
+1095,7,Suresh,Entertainment,441.31,2026-05-09,Weekend outing,2026-05
+1096,8,Anitha,Food,455.72,2026-05-09,Dinner,2026-05
+1097,8,Anitha,Transport,227.24,2026-05-09,Metro card recharge,2026-05
+1098,8,Anitha,Transport,264.92,2026-05-09,Auto fare,2026-05
+1099,1,Arun,Food,411.79,2026-05-10,Coffee,2026-05
+1100,2,Priya,Shopping,2132.31,2026-05-10,Clothes,2026-05
+1101,2,Priya,Shopping,1781.83,2026-05-10,Phone accessories,2026-05
+1102,3,Kavin,Food,228.2,2026-05-10,Snacks,2026-05
+1103,3,Kavin,Transport,186.14,2026-05-10,Metro card recharge,2026-05
+1104,6,Divya,Food,365.17,2026-05-10,Lunch,2026-05
+1105,6,Divya,Food,292.95,2026-05-10,Restaurant,2026-05
+1106,8,Anitha,Transport,85.32,2026-05-10,Bus pass top-up,2026-05
+1107,1,Arun,Food,443.03,2026-05-11,Breakfast,2026-05
+1108,1,Arun,Transport,144.87,2026-05-11,Auto fare,2026-05
+1109,2,Priya,Food,246.15,2026-05-11,Groceries,2026-05
+1110,3,Kavin,Transport,111.05,2026-05-11,Fuel,2026-05
+1111,4,Meena,Food,316.19,2026-05-11,Coffee,2026-05
+1112,5,Rahul,Food,287.33,2026-05-11,Breakfast,2026-05
+1113,6,Divya,Utilities,2025.77,2026-05-11,Internet bill,2026-05
+1114,6,Divya,Food,426.36,2026-05-11,Snacks,2026-05
+1115,6,Divya,Food,277.06,2026-05-11,Coffee,2026-05
+1116,6,Divya,Food,280.98,2026-05-11,Dinner,2026-05
+1117,6,Divya,Transport,213.86,2026-05-11,Fuel,2026-05
+1118,7,Suresh,Utilities,1953.13,2026-05-11,Electricity bill,2026-05
+1119,7,Suresh,Food,116.5,2026-05-11,Dinner,2026-05
+1120,7,Suresh,Transport,271.66,2026-05-11,Cab ride,2026-05
+1121,7,Suresh,Shopping,2829.56,2026-05-11,Unknown,2026-05
+1122,8,Anitha,Food,400.33,2026-05-11,Groceries,2026-05
+1123,8,Anitha,Transport,108.67,2026-05-11,Bus pass top-up,2026-05
+1124,1,Arun,Utilities,1469.17,2026-05-12,Mobile recharge,2026-05
+1125,1,Arun,Transport,141.6,2026-05-12,Metro card recharge,2026-05
+1126,2,Priya,Food,230.14,2026-05-12,Lunch,2026-05
+1127,3,Kavin,Utilities,1926.95,2026-05-12,Internet bill,2026-05
+1128,4,Meena,Food,125.33,2026-05-12,Lunch,2026-05
+1129,4,Meena,Food,314.89,2026-05-12,Restaurant,2026-05
+1130,5,Rahul,Shopping,2582.09,2026-05-12,Headphones,2026-05
+1131,6,Divya,Food,474.82,2026-05-12,Groceries,2026-05
+1132,6,Divya,Transport,184.29,2026-05-12,Fuel,2026-05
+1133,7,Suresh,Food,477.0,2026-05-12,Dinner,2026-05
+1134,8,Anitha,Utilities,1017.91,2026-05-12,Internet bill,2026-05
+1135,8,Anitha,Shopping,1134.73,2026-05-12,Clothes,2026-05
+1136,8,Anitha,Shopping,2963.41,2026-05-12,Shoes,2026-05
+1137,1,Arun,Transport,108.14,2026-05-13,Bus pass top-up,2026-05
+1138,5,Rahul,Utilities,1603.35,2026-05-13,Water bill,2026-05
+1139,5,Rahul,Food,230.5,2026-05-13,Snacks,2026-05
+1140,5,Rahul,Food,264.9,2026-05-13,Snacks,2026-05
+1141,5,Rahul,Shopping,1009.65,2026-05-13,Phone accessories,2026-05
+1142,6,Divya,Transport,97.51,2026-05-13,Fuel,2026-05
+1143,8,Anitha,Transport,235.58,2026-05-13,Fuel,2026-05
+1144,2,Priya,Food,483.68,2026-05-14,Dinner,2026-05
+1145,2,Priya,Transport,169.06,2026-05-14,Cab ride,2026-05
+1146,2,Priya,Entertainment,235.84,2026-05-14,Weekend outing,2026-05
+1147,3,Kavin,Food,109.29,2026-05-14,Snacks,2026-05
+1148,4,Meena,Food,228.29,2026-05-14,Lunch,2026-05
+1149,4,Meena,Transport,298.7,2026-05-14,Auto fare,2026-05
+1150,4,Meena,Transport,66.71,2026-05-14,Metro card recharge,2026-05
+1151,2,Priya,Utilities,1303.82,2026-05-15,Mobile recharge,2026-05
+1152,2,Priya,Shopping,1905.43,2026-05-15,Clothes,2026-05
+1153,4,Meena,Food,275.14,2026-05-15,Lunch,2026-05
+1154,6,Divya,Food,141.66,2026-05-15,Lunch,2026-05
+1155,7,Suresh,Food,318.08,2026-05-15,Coffee,2026-05
+1156,8,Anitha,Food,398.27,2026-05-15,Lunch,2026-05
+1157,8,Anitha,Transport,192.68,2026-05-15,Auto fare,2026-05
+1158,1,Arun,Food,194.7,2026-05-16,Lunch,2026-05
+1159,1,Arun,Shopping,21769.48,2026-05-16,Appliance purchase,2026-05
+1160,2,Priya,Food,298.77,2026-05-16,Restaurant,2026-05
+1161,3,Kavin,Transport,208.05,2026-05-16,Cab ride,2026-05
+1162,4,Meena,Food,347.12,2026-05-16,Coffee,2026-05
+1163,4,Meena,Transport,169.49,2026-05-16,Cab ride,2026-05
+1164,7,Suresh,Transport,99.37,2026-05-16,Bus pass top-up,2026-05
+1165,8,Anitha,Food,319.56,2026-05-16,Groceries,2026-05
+1166,8,Anitha,Food,379.28,2026-05-16,Coffee,2026-05
+1167,2,Priya,Food,329.95,2026-05-17,Groceries,2026-05
+1168,3,Kavin,Food,481.17,2026-05-17,Snacks,2026-05
+1169,3,Kavin,Food,450.04,2026-05-17,Dinner,2026-05
+1170,4,Meena,Transport,177.05,2026-05-17,Cab ride,2026-05
+1171,5,Rahul,Food,112.86,2026-05-17,Coffee,2026-05
+1172,5,Rahul,Transport,209.76,2026-05-17,Metro card recharge,2026-05
+1173,2,Priya,Food,281.31,2026-05-18,Groceries,2026-05
+1174,7,Suresh,Food,264.48,2026-05-18,Restaurant,2026-05
+1175,3,Kavin,Food,202.04,2026-05-19,Snacks,2026-05
+1176,3,Kavin,Entertainment,609.98,2026-05-19,OTT subscription,2026-05
+1177,4,Meena,Transport,106.99,2026-05-19,Metro card recharge,2026-05
+1178,5,Rahul,Food,186.77,2026-05-19,Lunch,2026-05
+1179,7,Suresh,Food,233.74,2026-05-19,Breakfast,2026-05
+1180,8,Anitha,Food,428.75,2026-05-19,Coffee,2026-05
+1181,8,Anitha,Transport,144.5,2026-05-19,Fuel,2026-05
+1182,1,Arun,Food,411.6,2026-05-20,Snacks,2026-05
+1183,1,Arun,Education,1916.76,2026-05-20,Online course fee,2026-05
+1184,2,Priya,Food,219.75,2026-05-20,Snacks,2026-05
+1185,4,Meena,Food,251.32,2026-05-20,Restaurant,2026-05
+1186,4,Meena,Transport,62.71,2026-05-20,Fuel,2026-05
+1187,4,Meena,Entertainment,1056.23,2026-05-20,Unknown,2026-05
+1188,4,Meena,Entertainment,547.67,2026-05-20,Gaming,2026-05
+1189,5,Rahul,Food,395.01,2026-05-20,Unknown,2026-05
+1190,6,Divya,Education,1059.84,2026-05-20,Exam registration,2026-05
+1191,7,Suresh,Food,361.03,2026-05-20,Restaurant,2026-05
+1192,8,Anitha,Food,337.64,2026-05-20,Coffee,2026-05
+1193,8,Anitha,Entertainment,579.72,2026-05-20,OTT subscription,2026-05
+1194,4,Meena,Food,490.88,2026-05-21,Restaurant,2026-05
+1195,4,Meena,Food,180.75,2026-05-21,Snacks,2026-05
+1196,4,Meena,Food,479.54,2026-05-21,Restaurant,2026-05
+1197,5,Rahul,Food,468.67,2026-05-21,Breakfast,2026-05
+1198,5,Rahul,Food,407.7,2026-05-21,Unknown,2026-05
+1199,6,Divya,Food,225.89,2026-05-21,Restaurant,2026-05
+1200,7,Suresh,Food,400.4,2026-05-21,Breakfast,2026-05
+1201,7,Suresh,Transport,164.19,2026-05-21,Unknown,2026-05
+1202,8,Anitha,Food,144.3,2026-05-21,Snacks,2026-05
+1203,1,Arun,Food,437.43,2026-05-22,Groceries,2026-05
+1204,1,Arun,Food,206.59,2026-05-22,Unknown,2026-05
+1205,1,Arun,Transport,124.22,2026-05-22,Metro card recharge,2026-05
+1206,3,Kavin,Shopping,2112.05,2026-05-22,Shoes,2026-05
+1207,6,Divya,Transport,66.79,2026-05-22,Fuel,2026-05
+1208,1,Arun,Food,314.43,2026-05-23,Groceries,2026-05
+1209,2,Priya,Food,256.95,2026-05-23,Snacks,2026-05
+1210,3,Kavin,Food,316.83,2026-05-23,Lunch,2026-05
+1211,3,Kavin,Food,259.87,2026-05-23,Restaurant,2026-05
+1212,4,Meena,Transport,92.22,2026-05-23,Metro card recharge,2026-05
+1213,6,Divya,Food,282.14,2026-05-23,Restaurant,2026-05
+1214,7,Suresh,Food,362.0,2026-05-23,Groceries,2026-05
+1215,7,Suresh,Food,101.56,2026-05-23,Lunch,2026-05
+1216,7,Suresh,Food,135.49,2026-05-23,Restaurant,2026-05
+1217,7,Suresh,Shopping,1356.51,2026-05-23,Headphones,2026-05
+1218,1,Arun,Shopping,1838.59,2026-05-24,Shoes,2026-05
+1219,3,Kavin,Food,367.14,2026-05-24,Lunch,2026-05
+1220,3,Kavin,Food,213.41,2026-05-24,Groceries,2026-05
+1221,5,Rahul,Transport,262.43,2026-05-24,Bus pass top-up,2026-05
+1222,6,Divya,Food,135.1,2026-05-24,Restaurant,2026-05
+1223,6,Divya,Transport,269.07,2026-05-24,Fuel,2026-05
+1224,7,Suresh,Transport,57.9,2026-05-24,Auto fare,2026-05
+1225,7,Suresh,Transport,117.78,2026-05-24,Auto fare,2026-05
+1226,8,Anitha,Food,342.5,2026-05-24,Groceries,2026-05
+1227,1,Arun,Food,117.39,2026-05-25,Coffee,2026-05
+1228,1,Arun,Food,491.83,2026-05-25,Restaurant,2026-05
+1229,1,Arun,Entertainment,732.72,2026-05-25,Concert,2026-05
+1230,2,Priya,Transport,245.96,2026-05-25,Metro card recharge,2026-05
+1231,4,Meena,Shopping,2120.46,2026-05-25,Phone accessories,2026-05
+1232,4,Meena,Entertainment,628.17,2026-05-25,Gaming,2026-05
+1233,7,Suresh,Food,148.92,2026-05-25,Restaurant,2026-05
+1234,1,Arun,Food,254.04,2026-05-26,Breakfast,2026-05
+1235,2,Priya,Transport,275.64,2026-05-26,Bus pass top-up,2026-05
+1236,4,Meena,Food,306.3,2026-05-26,Lunch,2026-05
+1237,6,Divya,Shopping,1422.2,2026-05-26,Unknown,2026-05
+1238,7,Suresh,Transport,173.21,2026-05-26,Bus pass top-up,2026-05
+1239,8,Anitha,Food,184.03,2026-05-26,Snacks,2026-05
+1240,2,Priya,Food,229.0,2026-05-27,Lunch,2026-05
+1241,3,Kavin,Transport,294.55,2026-05-27,Auto fare,2026-05
+1242,4,Meena,Food,490.29,2026-05-27,Lunch,2026-05
+1243,7,Suresh,Food,218.16,2026-05-27,Groceries,2026-05
+1244,7,Suresh,Transport,255.77,2026-05-27,Cab ride,2026-05
+1245,8,Anitha,Food,289.15,2026-05-27,Breakfast,2026-05
+1246,8,Anitha,Food,139.23,2026-05-27,Restaurant,2026-05
+1247,1,Arun,Food,433.38,2026-05-28,Groceries,2026-05
+1248,2,Priya,Food,311.82,2026-05-28,Restaurant,2026-05
+1249,3,Kavin,Food,179.12,2026-05-28,Dinner,2026-05
+1250,6,Divya,Food,471.85,2026-05-28,Groceries,2026-05
+1251,6,Divya,Transport,113.33,2026-05-28,Fuel,2026-05
+1252,7,Suresh,Transport,269.37,2026-05-28,Unknown,2026-05
+1253,7,Suresh,Shopping,1556.24,2026-05-28,Headphones,2026-05
+1254,3,Kavin,Transport,280.97,2026-05-29,Bus pass top-up,2026-05
+1255,5,Rahul,Food,311.46,2026-05-29,Breakfast,2026-05
+1256,8,Anitha,Food,427.81,2026-05-29,Breakfast,2026-05
+1257,8,Anitha,Food,344.16,2026-05-29,Lunch,2026-05
+1258,8,Anitha,Entertainment,964.72,2026-05-29,Gaming,2026-05
+1259,1,Arun,Food,119.7,2026-05-30,Dinner,2026-05
+1260,1,Arun,Transport,279.09,2026-05-30,Cab ride,2026-05
+1261,1,Arun,Shopping,2131.47,2026-05-30,Unknown,2026-05
+1262,2,Priya,Food,237.32,2026-05-30,Snacks,2026-05
+1263,2,Priya,Food,316.34,2026-05-30,Coffee,2026-05
+1264,2,Priya,Entertainment,303.0,2026-05-30,OTT subscription,2026-05
+1265,3,Kavin,Food,277.58,2026-05-30,Snacks,2026-05
+1266,3,Kavin,Transport,263.5,2026-05-30,Bus pass top-up,2026-05
+1267,4,Meena,Transport,96.98,2026-05-30,Cab ride,2026-05
+1268,8,Anitha,Transport,72.89,2026-05-30,Fuel,2026-05
+1269,1,Arun,Food,450.0,2026-05-31,Breakfast,2026-05
+1270,2,Priya,Food,458.8,2026-05-31,Lunch,2026-05
+1271,2,Priya,Food,336.3,2026-05-31,Coffee,2026-05
+1272,2,Priya,Transport,218.65,2026-05-31,Bus pass top-up,2026-05
+1273,3,Kavin,Shopping,2406.48,2026-05-31,Unknown,2026-05
+1274,5,Rahul,Food,280.23,2026-05-31,Restaurant,2026-05
+1275,5,Rahul,Transport,105.99,2026-05-31,Metro card recharge,2026-05
+1276,5,Rahul,Transport,297.57,2026-05-31,Auto fare,2026-05
+1277,5,Rahul,Entertainment,1185.05,2026-05-31,Weekend outing,2026-05
+1278,2,Priya,Rent,12200.0,2026-06-01,Monthly rent,2026-06
+1279,2,Priya,Food,303.27,2026-06-01,Lunch,2026-06
+1280,2,Priya,Transport,52.31,2026-06-01,Cab ride,2026-06
+1281,3,Kavin,Food,234.45,2026-06-01,Breakfast,2026-06
+1282,4,Meena,Entertainment,1198.83,2026-06-01,Weekend outing,2026-06
+1283,5,Rahul,Food,171.44,2026-06-01,Snacks,2026-06
+1284,6,Divya,Shopping,2323.74,2026-06-01,Phone accessories,2026-06
+1285,7,Suresh,Rent,6600.0,2026-06-01,Monthly rent,2026-06
+1286,1,Arun,Rent,6700.0,2026-06-02,Monthly rent,2026-06
+1287,2,Priya,Food,144.64,2026-06-02,Snacks,2026-06
+1288,3,Kavin,Rent,11300.0,2026-06-02,Unknown,2026-06
+1289,5,Rahul,Food,121.97,2026-06-02,Restaurant,2026-06
+1290,6,Divya,Food,322.48,2026-06-02,Snacks,2026-06
+1291,7,Suresh,Transport,250.14,2026-06-02,Unknown,2026-06
+1292,1,Arun,Food,390.29,2026-06-03,Snacks,2026-06
+1293,1,Arun,Food,474.38,2026-06-03,Coffee,2026-06
+1294,6,Divya,Rent,12900.0,2026-06-03,Monthly rent,2026-06
+1295,6,Divya,Food,324.8,2026-06-03,Groceries,2026-06
+1296,6,Divya,Transport,123.08,2026-06-03,Auto fare,2026-06
+1297,6,Divya,Transport,60.79,2026-06-03,Metro card recharge,2026-06
+1298,6,Divya,Entertainment,721.71,2026-06-03,OTT subscription,2026-06
+1299,7,Suresh,Transport,121.33,2026-06-03,Fuel,2026-06
+1300,8,Anitha,Rent,11600.0,2026-06-03,Monthly rent,2026-06
+1301,8,Anitha,Food,359.38,2026-06-03,Groceries,2026-06
+1302,1,Arun,Food,345.75,2026-06-04,Snacks,2026-06
+1303,1,Arun,Food,135.08,2026-06-04,Unknown,2026-06
+1304,1,Arun,Transport,188.25,2026-06-04,Metro card recharge,2026-06
+1305,1,Arun,Shopping,1970.64,2026-06-04,Clothes,2026-06
+1306,2,Priya,Food,445.11,2026-06-04,Lunch,2026-06
+1307,3,Kavin,Food,256.03,2026-06-04,Breakfast,2026-06
+1308,4,Meena,Rent,9500.0,2026-06-04,Monthly rent,2026-06
+1309,4,Meena,Food,320.1,2026-06-04,Coffee,2026-06
+1310,5,Rahul,Food,175.48,2026-06-04,Breakfast,2026-06
+1311,6,Divya,Food,400.61,2026-06-04,Groceries,2026-06
+1312,7,Suresh,Food,190.31,2026-06-04,Dinner,2026-06
+1313,1,Arun,Food,483.55,2026-06-05,Lunch,2026-06
+1314,2,Priya,Transport,205.04,2026-06-05,Auto fare,2026-06
+1315,3,Kavin,Food,409.73,2026-06-05,Snacks,2026-06
+1316,3,Kavin,Food,269.12,2026-06-05,Dinner,2026-06
+1317,3,Kavin,Food,416.3,2026-06-05,Lunch,2026-06
+1318,5,Rahul,Rent,9500.0,2026-06-05,Unknown,2026-06
+1319,5,Rahul,Transport,199.86,2026-06-05,Unknown,2026-06
+1320,8,Anitha,Food,186.23,2026-06-05,Breakfast,2026-06
+1321,3,Kavin,Transport,62.85,2026-06-06,Fuel,2026-06
+1322,4,Meena,Food,350.73,2026-06-06,Groceries,2026-06
+1323,4,Meena,Food,216.53,2026-06-06,Dinner,2026-06
+1324,4,Meena,Food,243.07,2026-06-06,Unknown,2026-06
+1325,4,Meena,Transport,118.2,2026-06-06,Bus pass top-up,2026-06
+1326,6,Divya,Food,235.61,2026-06-06,Snacks,2026-06
+1327,6,Divya,Transport,227.05,2026-06-06,Cab ride,2026-06
+1328,8,Anitha,Food,392.65,2026-06-06,Groceries,2026-06
+1329,8,Anitha,Transport,291.15,2026-06-06,Cab ride,2026-06
+1330,2,Priya,Utilities,1331.37,2026-06-07,Water bill,2026-06
+1331,2,Priya,Food,232.29,2026-06-07,Lunch,2026-06
+1332,2,Priya,Transport,262.36,2026-06-07,Fuel,2026-06
+1333,3,Kavin,Education,1259.9,2026-06-07,Online course fee,2026-06
+1334,4,Meena,Transport,148.02,2026-06-07,Fuel,2026-06
+1335,5,Rahul,Food,403.74,2026-06-07,Restaurant,2026-06
+1336,5,Rahul,Entertainment,302.8,2026-06-07,Concert,2026-06
+1337,6,Divya,Food,444.14,2026-06-07,Coffee,2026-06
+1338,7,Suresh,Transport,168.04,2026-06-07,Fuel,2026-06
+1339,8,Anitha,Utilities,1583.67,2026-06-07,Mobile recharge,2026-06
+1340,2,Priya,Entertainment,654.46,2026-06-08,Weekend outing,2026-06
+1341,3,Kavin,Utilities,1085.09,2026-06-08,Mobile recharge,2026-06
+1342,8,Anitha,Food,454.62,2026-06-08,Breakfast,2026-06
+1343,8,Anitha,Transport,78.48,2026-06-08,Unknown,2026-06
+1344,8,Anitha,Transport,245.23,2026-06-08,Metro card recharge,2026-06
+1345,3,Kavin,Food,453.94,2026-06-09,Lunch,2026-06
+1346,3,Kavin,Entertainment,1079.07,2026-06-09,Movie tickets,2026-06
+1347,4,Meena,Food,144.29,2026-06-09,Groceries,2026-06
+1348,4,Meena,Food,223.33,2026-06-09,Dinner,2026-06
+1349,7,Suresh,Food,452.65,2026-06-09,Dinner,2026-06
+1350,8,Anitha,Food,339.11,2026-06-09,Coffee,2026-06
+1351,2,Priya,Food,257.65,2026-06-10,Lunch,2026-06
+1352,2,Priya,Food,196.99,2026-06-10,Restaurant,2026-06
+1353,3,Kavin,Transport,165.3,2026-06-10,Bus pass top-up,2026-06
+1354,3,Kavin,Transport,258.03,2026-06-10,Unknown,2026-06
+1355,3,Kavin,Shopping,2372.05,2026-06-10,Home supplies,2026-06
+1356,3,Kavin,Entertainment,267.52,2026-06-10,Gaming,2026-06
+1357,5,Rahul,Food,170.8,2026-06-10,Lunch,2026-06
+1358,8,Anitha,Entertainment,457.69,2026-06-10,OTT subscription,2026-06
+1359,1,Arun,Utilities,2263.22,2026-06-11,Water bill,2026-06
+1360,1,Arun,Food,459.35,2026-06-11,Coffee,2026-06
+1361,1,Arun,Food,225.78,2026-06-11,Dinner,2026-06
+1362,4,Meena,Transport,94.09,2026-06-11,Bus pass top-up,2026-06
+1363,4,Meena,Transport,159.71,2026-06-11,Auto fare,2026-06
+1364,5,Rahul,Food,232.27,2026-06-11,Breakfast,2026-06
+1365,2,Priya,Food,124.21,2026-06-12,Restaurant,2026-06
+1366,3,Kavin,Transport,138.33,2026-06-12,Metro card recharge,2026-06
+1367,7,Suresh,Food,326.19,2026-06-12,Breakfast,2026-06
+1368,7,Suresh,Food,198.39,2026-06-12,Lunch,2026-06
+1369,7,Suresh,Shopping,2689.35,2026-06-12,Shoes,2026-06
+1370,8,Anitha,Transport,279.01,2026-06-12,Cab ride,2026-06
+1371,2,Priya,Food,100.66,2026-06-13,Dinner,2026-06
+1372,2,Priya,Food,412.23,2026-06-13,Breakfast,2026-06
+1373,3,Kavin,Food,320.87,2026-06-13,Unknown,2026-06
+1374,4,Meena,Food,424.85,2026-06-13,Dinner,2026-06
+1375,5,Rahul,Food,399.67,2026-06-13,Coffee,2026-06
+1376,6,Divya,Food,379.33,2026-06-13,Breakfast,2026-06
+1377,1,Arun,Food,309.05,2026-06-14,Coffee,2026-06
+1378,4,Meena,Food,186.2,2026-06-14,Snacks,2026-06
+1379,4,Meena,Transport,110.19,2026-06-14,Cab ride,2026-06
+1380,5,Rahul,Food,128.72,2026-06-14,Breakfast,2026-06
+1381,5,Rahul,Shopping,2110.02,2026-06-14,Shoes,2026-06
+1382,7,Suresh,Utilities,1871.26,2026-06-14,Mobile recharge,2026-06
+1383,7,Suresh,Food,183.71,2026-06-14,Lunch,2026-06
+1384,7,Suresh,Food,470.78,2026-06-14,Lunch,2026-06
+1385,7,Suresh,Education,18827.8,2026-06-14,Professional course,2026-06
+1386,8,Anitha,Food,197.79,2026-06-14,Lunch,2026-06
+1387,8,Anitha,Food,263.88,2026-06-14,Snacks,2026-06
+1388,8,Anitha,Food,106.5,2026-06-14,Breakfast,2026-06
+1389,8,Anitha,Shopping,618.68,2026-06-14,Shoes,2026-06
+1390,1,Arun,Food,339.84,2026-06-15,Groceries,2026-06
+1391,2,Priya,Food,233.24,2026-06-15,Dinner,2026-06
+1392,2,Priya,Food,373.3,2026-06-15,Dinner,2026-06
+1393,2,Priya,Transport,192.3,2026-06-15,Unknown,2026-06
+1394,2,Priya,Transport,263.34,2026-06-15,Auto fare,2026-06
+1395,4,Meena,Utilities,1430.55,2026-06-15,Mobile recharge,2026-06
+1396,4,Meena,Food,158.97,2026-06-15,Dinner,2026-06
+1397,4,Meena,Food,412.88,2026-06-15,Snacks,2026-06
+1398,4,Meena,Entertainment,1089.78,2026-06-15,Concert,2026-06
+1399,5,Rahul,Utilities,1345.45,2026-06-15,Unknown,2026-06
+1400,6,Divya,Utilities,1444.08,2026-06-15,Mobile recharge,2026-06
+1401,6,Divya,Transport,241.05,2026-06-15,Cab ride,2026-06
+1402,6,Divya,Shopping,1715.11,2026-06-15,Phone accessories,2026-06
+1403,7,Suresh,Food,422.33,2026-06-15,Dinner,2026-06
+1404,7,Suresh,Transport,195.5,2026-06-15,Fuel,2026-06
+1405,7,Suresh,Entertainment,365.87,2026-06-15,Weekend outing,2026-06
+1406,8,Anitha,Food,346.94,2026-06-15,Lunch,2026-06
+1407,1,Arun,Education,2018.85,2026-06-16,Workshop fee,2026-06
+1408,3,Kavin,Food,374.47,2026-06-16,Coffee,2026-06
+1409,4,Meena,Food,394.63,2026-06-16,Breakfast,2026-06
+1410,4,Meena,Food,453.13,2026-06-16,Coffee,2026-06
+1411,5,Rahul,Food,354.67,2026-06-16,Dinner,2026-06
+1412,6,Divya,Food,463.92,2026-06-16,Restaurant,2026-06
+1413,6,Divya,Food,389.37,2026-06-16,Coffee,2026-06
+1414,7,Suresh,Food,271.44,2026-06-16,Lunch,2026-06
+1415,7,Suresh,Shopping,2871.62,2026-06-16,Shoes,2026-06
+1416,1,Arun,Food,328.97,2026-06-17,Breakfast,2026-06
+1417,1,Arun,Transport,145.83,2026-06-17,Fuel,2026-06
+1418,1,Arun,Entertainment,654.32,2026-06-17,Movie tickets,2026-06
+1419,5,Rahul,Food,324.31,2026-06-17,Lunch,2026-06
+1420,5,Rahul,Food,108.46,2026-06-17,Restaurant,2026-06
+1421,5,Rahul,Transport,169.31,2026-06-17,Bus pass top-up,2026-06
+1422,6,Divya,Entertainment,798.17,2026-06-17,Gaming,2026-06
+1423,1,Arun,Food,138.02,2026-06-18,Breakfast,2026-06
+1424,5,Rahul,Food,108.69,2026-06-18,Groceries,2026-06
+1425,6,Divya,Food,486.48,2026-06-18,Dinner,2026-06
+1426,6,Divya,Transport,126.91,2026-06-18,Metro card recharge,2026-06
+1427,7,Suresh,Food,445.17,2026-06-18,Lunch,2026-06
+1428,7,Suresh,Food,286.91,2026-06-18,Dinner,2026-06
+1429,7,Suresh,Transport,149.66,2026-06-18,Fuel,2026-06
+1430,7,Suresh,Transport,88.37,2026-06-18,Cab ride,2026-06
+1431,1,Arun,Food,168.52,2026-06-19,Groceries,2026-06
+1432,1,Arun,Transport,144.09,2026-06-19,Fuel,2026-06
+1433,2,Priya,Transport,84.55,2026-06-19,Auto fare,2026-06
+1434,2,Priya,Shopping,906.86,2026-06-19,Phone accessories,2026-06
+1435,3,Kavin,Food,473.16,2026-06-19,Dinner,2026-06
+1436,3,Kavin,Entertainment,17392.4,2026-06-19,Family vacation,2026-06
+1437,5,Rahul,Food,277.88,2026-06-19,Snacks,2026-06
+1438,5,Rahul,Entertainment,1010.52,2026-06-19,Concert,2026-06
+1439,6,Divya,Food,401.83,2026-06-19,Snacks,2026-06
+1440,6,Divya,Transport,59.88,2026-06-19,Bus pass top-up,2026-06
+1441,8,Anitha,Food,343.52,2026-06-19,Coffee,2026-06
+1442,1,Arun,Food,267.44,2026-06-20,Restaurant,2026-06
+1443,1,Arun,Transport,229.44,2026-06-20,Cab ride,2026-06
+1444,3,Kavin,Food,144.74,2026-06-20,Snacks,2026-06
+1445,3,Kavin,Food,496.82,2026-06-20,Groceries,2026-06
+1446,5,Rahul,Food,210.01,2026-06-20,Snacks,2026-06
+1447,6,Divya,Food,268.09,2026-06-20,Groceries,2026-06
+1448,7,Suresh,Food,438.54,2026-06-20,Groceries,2026-06
+1449,8,Anitha,Food,467.47,2026-06-20,Unknown,2026-06
+1450,2,Priya,Food,182.81,2026-06-21,Restaurant,2026-06
+1451,3,Kavin,Transport,294.17,2026-06-21,Metro card recharge,2026-06
+1452,1,Arun,Entertainment,495.36,2026-06-22,Weekend outing,2026-06
+1453,4,Meena,Food,127.97,2026-06-22,Dinner,2026-06
+1454,4,Meena,Transport,237.95,2026-06-22,Bus pass top-up,2026-06
+1455,4,Meena,Transport,142.32,2026-06-22,Bus pass top-up,2026-06
+1456,5,Rahul,Shopping,546.09,2026-06-22,Shoes,2026-06
+1457,6,Divya,Food,181.74,2026-06-22,Snacks,2026-06
+1458,7,Suresh,Food,403.99,2026-06-22,Restaurant,2026-06
+1459,7,Suresh,Food,419.5,2026-06-22,Unknown,2026-06
+1460,8,Anitha,Food,447.64,2026-06-22,Groceries,2026-06
+1461,1,Arun,Food,419.7,2026-06-23,Breakfast,2026-06
+1462,1,Arun,Food,208.21,2026-06-23,Coffee,2026-06
+1463,4,Meena,Food,152.46,2026-06-23,Dinner,2026-06
+1464,4,Meena,Food,457.88,2026-06-23,Coffee,2026-06
+1465,4,Meena,Food,383.26,2026-06-23,Coffee,2026-06
+1466,4,Meena,Food,426.03,2026-06-23,Lunch,2026-06
+1467,5,Rahul,Transport,138.05,2026-06-23,Auto fare,2026-06
+1468,7,Suresh,Transport,113.78,2026-06-23,Metro card recharge,2026-06
+1469,8,Anitha,Transport,279.77,2026-06-23,Fuel,2026-06
+1470,1,Arun,Food,418.05,2026-06-24,Restaurant,2026-06
+1471,1,Arun,Food,368.49,2026-06-24,Coffee,2026-06
+1472,2,Priya,Shopping,2638.73,2026-06-24,Shoes,2026-06
+1473,3,Kavin,Food,435.67,2026-06-24,Lunch,2026-06
+1474,5,Rahul,Transport,106.1,2026-06-24,Bus pass top-up,2026-06
+1475,6,Divya,Food,123.49,2026-06-24,Snacks,2026-06
+1476,7,Suresh,Transport,236.41,2026-06-24,Cab ride,2026-06
+1477,7,Suresh,Transport,109.7,2026-06-24,Metro card recharge,2026-06
+1478,8,Anitha,Food,345.84,2026-06-24,Restaurant,2026-06
+1479,1,Arun,Food,337.47,2026-06-25,Breakfast,2026-06
+1480,3,Kavin,Food,170.54,2026-06-25,Lunch,2026-06
+1481,3,Kavin,Shopping,1728.14,2026-06-25,Shoes,2026-06
+1482,5,Rahul,Food,457.22,2026-06-25,Groceries,2026-06
+1483,7,Suresh,Food,179.35,2026-06-25,Snacks,2026-06
+1484,7,Suresh,Food,397.83,2026-06-25,Groceries,2026-06
+1485,7,Suresh,Entertainment,232.15,2026-06-25,Weekend outing,2026-06
+1486,8,Anitha,Transport,129.07,2026-06-25,Metro card recharge,2026-06
+1487,1,Arun,Shopping,2092.68,2026-06-26,Unknown,2026-06
+1488,2,Priya,Food,204.14,2026-06-26,Lunch,2026-06
+1489,2,Priya,Transport,87.61,2026-06-26,Metro card recharge,2026-06
+1490,5,Rahul,Food,278.51,2026-06-26,Groceries,2026-06
+1491,5,Rahul,Food,162.16,2026-06-26,Breakfast,2026-06
+1492,6,Divya,Food,447.62,2026-06-26,Groceries,2026-06
+1493,7,Suresh,Food,258.62,2026-06-26,Restaurant,2026-06
+1494,5,Rahul,Transport,215.0,2026-06-27,Unknown,2026-06
+1495,6,Divya,Food,351.58,2026-06-27,Restaurant,2026-06
+1496,7,Suresh,Food,128.05,2026-06-27,Coffee,2026-06
+1497,8,Anitha,Food,249.57,2026-06-27,Groceries,2026-06
+1498,1,Arun,Food,147.89,2026-06-28,Coffee,2026-06
+1499,2,Priya,Food,119.43,2026-06-28,Breakfast,2026-06
+1500,2,Priya,Transport,57.82,2026-06-28,Auto fare,2026-06
+1501,3,Kavin,Transport,154.17,2026-06-28,Cab ride,2026-06
+1502,3,Kavin,Entertainment,353.53,2026-06-28,Movie tickets,2026-06
+1503,4,Meena,Transport,240.79,2026-06-28,Bus pass top-up,2026-06
+1504,4,Meena,Shopping,1744.83,2026-06-28,Home supplies,2026-06
+1505,5,Rahul,Food,319.8,2026-06-28,Snacks,2026-06
+1506,8,Anitha,Food,235.0,2026-06-28,Groceries,2026-06
+1507,8,Anitha,Transport,163.4,2026-06-28,Bus pass top-up,2026-06
+1508,1,Arun,Food,201.35,2026-06-29,Coffee,2026-06
+1509,1,Arun,Transport,284.03,2026-06-29,Auto fare,2026-06
+1510,1,Arun,Transport,245.08,2026-06-29,Cab ride,2026-06
+1511,1,Arun,Shopping,796.2,2026-06-29,Shoes,2026-06
+1512,4,Meena,Food,161.77,2026-06-29,Lunch,2026-06
+1513,5,Rahul,Transport,173.52,2026-06-29,Cab ride,2026-06
+1514,6,Divya,Shopping,2391.26,2026-06-29,Shoes,2026-06
+1515,7,Suresh,Entertainment,1070.73,2026-06-29,OTT subscription,2026-06
+1516,8,Anitha,Food,426.31,2026-06-29,Breakfast,2026-06
+1517,8,Anitha,Education,729.92,2026-06-29,Workshop fee,2026-06
+1518,1,Arun,Entertainment,642.31,2026-06-30,Gaming,2026-06
+1519,3,Kavin,Food,177.04,2026-06-30,Unknown,2026-06
+1520,3,Kavin,Food,127.86,2026-06-30,Restaurant,2026-06
+1521,3,Kavin,Food,306.58,2026-06-30,Groceries,2026-06
+1522,6,Divya,Food,283.35,2026-06-30,Groceries,2026-06
+1523,7,Suresh,Food,268.07,2026-06-30,Lunch,2026-06
