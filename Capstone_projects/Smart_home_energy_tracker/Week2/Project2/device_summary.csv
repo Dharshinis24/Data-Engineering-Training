@@ -1,0 +1,13 @@
+device_id,device_name,total_kwh,average_kwh
+9,Air Conditioner,4.65,1.1625
+16,Bathroom Light,2.03,1.015
+17,Water Heater,1.8,0.6
+13,Desktop Computer,0.98,0.245
+5,Refrigerator,0.745,0.149
+6,Microwave Oven,0.6,0.2
+2,LED TV,0.48,0.16
+1,Ceiling Fan,0.285,0.0712
+10,Bedroom Fan,0.18,0.06
+3,Living Room Light,0.03,0.015
+12,Phone Charger,0.02,0.02
+14,Desk Lamp,0.009,0.009

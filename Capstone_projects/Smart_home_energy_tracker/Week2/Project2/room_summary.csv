@@ -1,0 +1,6 @@
+room_id,room_name,sum,mean
+1,Living Room,0.795,0.0883
+2,Kitchen,1.345,0.1681
+3,Bedroom,4.85,0.6062
+4,Study Room,0.989,0.1978
+5,Bathroom,3.83,0.766
